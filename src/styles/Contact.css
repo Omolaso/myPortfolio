@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-container{
+    padding: 1rem 5rem;
+    background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
+    text-align: center;
+}
+
+.contact-container .contact #img{
+    max-width: 700px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 0.1rem;
+    border-radius: 50%;
+}
+
+.contact-container .contact .btn{
+    border: none;
+    background: var(--lightBlack);
+    color: var(--blueGrey);
+    font-weight: 400;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-container .btn:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container{
+    background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
+    padding: 0.5rem 5rem;
+    color: var(--lightGrey);
+    line-height: 1.5;
+    color: var(--lightBlack)
+}
+
+.about-container h1{
+    font-size: 50px;
+    text-align: center;
+    color: var(--lightBlack)
+}
+
+.about-container h3{
+    font-size: 30px;
+    color: var(--lightBlack)
+}
+
+.about-container p{
+    font-size: 20px;
+    padding: 0.5rem 0;
+}
+
+@media screen and (max-width:768px) {
+    .about-container{
+        text-align: center;
+    }
+}

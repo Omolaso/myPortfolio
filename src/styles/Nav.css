@@ -1,22 +1,14 @@
 :root{
-    --lightBlue: #F8F9FA;
-    --skyBlue: #0056b3;
-    --black: #000;
-    --wine: rgb(255, 60, 0);
-    --lightGrey: #EFCFC7;
-    --purple: #551A8B;
-    --deepBlue: darkblue;
-    --green: #00AD45;
-    --deepGreen: #043927;
-    --deepGrey: #ccc;
-    --white: #fff;
+    --lightBlack: #0D192F;
+    --lightGrey: #CDD8F3;
+    --blueGrey: #8893AF;
+    --lightGreen: #87DDD0;
 }
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-container{
@@ -26,10 +18,12 @@
     /* border: 1px solid; */
     padding: 0 5rem;
     height: 80px;
+    background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
 }
 
 .nav-container .logo{
     flex: 1;
+    color: var(--lightBlack) !important;
 }
 
 .nav-container .nav-links{
@@ -45,10 +39,20 @@
 
 .nav-container #link{
     text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
+    /* color: var(--lightGrey); */
+    color: var( --lightBlack);
+}
+
+.nav-links #link:hover{
+    text-decoration: underline;
 }
 
 .nav-links #link:active{
     color: var(--wine);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container .nav-links{
+        display: none;
+    }
 }
