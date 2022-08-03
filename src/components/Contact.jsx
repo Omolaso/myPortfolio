@@ -17,7 +17,7 @@ const Contact = () => {
               <FontAwesomeIcon id='github' icon={faGithub}/>
             </a>
            
-            <a href="https://linkedin.com/in/adesanya-oluwatobiloba-b131991b0" target="_blank" rel="noopener noreferrer"> 
+            <a href="https://linkedin.com/in/adesanyaoluwatobiloba/" target="_blank" rel="noopener noreferrer"> 
               <FontAwesomeIcon id='linkedin' icon={faLinkedin}/> 
             </a>
 
