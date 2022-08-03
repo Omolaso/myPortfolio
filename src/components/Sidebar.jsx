@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeSideBar } from '../redux-slice/HamburgerSlice';
@@ -23,10 +23,10 @@ const SideBar = () => {
   
       window.addEventListener('resize', removeSide);
       window.addEventListener('scroll', removeSide);
-  
+     
   
     return (
-        <ul className={`sidebar ${isHamActive ? "show-sidebar" : ""}`}>
+        <ul onClick={removeSide} className={`sidebar ${isHamActive ? "show-sidebar" : ""}`}>
             <li> <Link to='/Home' id='link'> Home </Link> </li>
             <li> <Link to='/About' id='link'> About </Link> </li>
             <li> <Link to='/Projects' id='link'> My Projects </Link> </li>

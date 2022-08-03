@@ -7,7 +7,6 @@ const SharedLayout = () => {
   return (
     <>
       <Navs/>
-      
       <section>
         <Outlet/>
       </section>

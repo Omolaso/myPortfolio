@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.home-container-toggle{
+    padding-top: 10rem;
+}
+
 .home-container{
     display: flex;
     align-items: center;

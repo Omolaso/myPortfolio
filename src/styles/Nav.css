@@ -52,7 +52,7 @@
 /* icons */
 
 #bars{
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;

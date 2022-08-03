@@ -10,8 +10,11 @@ import SideBar from '../components/Sidebar';
 
 
 const Navs = () => {
-  const dispatch = useDispatch()
- 
+  const dispatch = useDispatch();
+  function handleHamburger(){
+    dispatch(handleHamburgerToggle())
+  }
+
   return (
     <div className='container'>
         <header className='nav-container'>
@@ -19,7 +22,7 @@ const Navs = () => {
                 <h3><Link to='/' id='link' className="h-logo"> Tobi Adesanya </Link></h3>
                 <div className='mobile'>
                   <FontAwesomeIcon id='react' icon={faReact}/>
-                  <div className="hamburger" onClick={()=>dispatch(handleHamburgerToggle())}>
+                  <div className="hamburger" onClick={ handleHamburger }>
                     <FontAwesomeIcon icon={ faBars } id='bars'/>
                   </div>
                 </div>
@@ -28,7 +31,7 @@ const Navs = () => {
                 <li> <Link to='/Home' id='link'> Home </Link> </li>
                 <li> <Link to='/About' id='link'> About </Link> </li>
                 <li> <Link to='/Projects' id='link'> My Projects </Link> </li>
-                <li> <Link to='/Contact' id='link'> Contact </Link> </li>
+                <li> <Link to='/Contact' id='link'> Contact Me</Link> </li>
             </ul>
         </header>
         <SideBar/>
