@@ -23,7 +23,7 @@ const About = () => {
           <p>Well, at first, I had little or no idea about tech or coding. However, has time went on, I began to meet
             techies and have them as friends. They inspired me. I mean, they could easily make web pages and applications look
             astonishing by writing a few lines of code. I was mesmerized and wanted to try it too. I began to feel the huge
-            to build web pages just by clicking my laptop's keyboards (so I thought) so I enrolled at Stutern and began then 
+            to build web pages just by clicking my laptop's keyboards (so I thought). So I enrolled at Stutern and began then 
             I totally fell in love with it! I wanted to know more, thereby making research, and increasing my knowledge. It was
             extremely challenging at first but the joy of been able to build and solve technical problems motivated and still
             motivates me.</p>
