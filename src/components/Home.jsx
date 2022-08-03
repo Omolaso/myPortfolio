@@ -16,10 +16,10 @@ const Home = () => {
     <>
       <div className="home-container">
         <section className='text'>
-          <h1> Hi, I'm <span>Tobi</span>.</h1>
+          <h1> Hi, I'm Tobi.</h1>
           <h2>A FRONTEND DEVELOPER</h2>
           <p> I enjoy building responsive and adequate front-end products. <br/>
-            I am curious, versatile, passionate about learning and I love to try new techs I<span>&#39;</span>m not familiar with.
+            I am curious, versatile, passionate about learning and I love to try new techs.
           </p>
           <div className='hire-btn'>
             <button onClick={about} className='learn'>Learn More</button>

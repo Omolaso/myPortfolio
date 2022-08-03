@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid; */
     padding: 0 5rem;
     height: 80px;
     background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
@@ -23,7 +22,10 @@
 
 .nav-container .logo{
     flex: 1;
-    color: var(--lightBlack) !important;
+}
+
+.nav-container .logo .mobile{
+    display: none;
 }
 
 .nav-container .nav-links{
@@ -47,11 +49,48 @@
     text-decoration: underline;
 }
 
-.nav-links #link:active{
-    color: var(--wine);
+/* icons */
+
+#bars{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--lightBlack);
+    font-size: 20px;
 }
 
+#react{
+    animation: react 10s linear infinite;
+    font-size: 25px;
+    
+}
+
+@keyframes react {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* MEDIA QUERY */
+
 @media screen and (max-width: 768px) {
+    .nav-container .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-container .logo .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0.7;
+    }
+
     .nav-container .nav-links{
         display: none;
     }

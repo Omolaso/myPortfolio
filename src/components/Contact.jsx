@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/Contact.css';
-import me from '../images/me.jpg'
+import me from '../images/me.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
   return (
@@ -9,15 +12,34 @@ const Contact = () => {
           <h1>Get in touch</h1>
           <img src={me} alt="me" id='img' />
           <div className="links">
+
             <a href="https://github.com/omolaso" target="_blank" rel="noopener noreferrer">
-              Github
+              <FontAwesomeIcon id='github' icon={faGithub}/>
             </a>
-            <a href="mailto:adextee001@gmail.com"> Mail </a>
-            <a href="tel:+2348143161117"> Phone </a>
+           
+            <a href="https://linkedin.com/in/adesanya-oluwatobiloba-b131991b0" target="_blank" rel="noopener noreferrer"> 
+              <FontAwesomeIcon id='linkedin' icon={faLinkedin}/> 
+            </a>
+
+            <a href="https://twitter.com/omolasofrancis" target="_blank" rel="noopener noreferrer"> 
+              <FontAwesomeIcon id='twitter' icon={faTwitter}/> 
+            </a>
+
+            <a href="mailto:adextee001@gmail.com" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon id='mail' icon={faEnvelope}/>
+            </a>
           </div>
-          <a href="/docs.google.com/document/d/1Up2hVMiyo9krdIYR_YQpzQOYKsR4THrlYX6eAhA_hXY" 
-          download="Tobi Adesanya's Resume"><button className="btn">Download Resume</button></a>
+
+          <div className="download">
+            <a href="https://drive.google.com/file/d/1N_MkNAuaAaG3mgrTzphvIOCkihPkVi0z/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer">
+              <button className="btn">Download Resume</button>
+            </a>
+          </div>
+
         </div>
+
+         
     </div>
   )
 }

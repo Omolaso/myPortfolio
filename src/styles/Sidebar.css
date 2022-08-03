@@ -1,0 +1,33 @@
+.sidebar {
+    position: absolute;
+    list-style: none;
+    background-color: rgb(235, 235, 235);
+    border-bottom-left-radius: 3px;
+    top: 70px;
+    right: 0;
+    font-size: calc(10px + 1vmin);
+    padding: 2em 1.5em;
+    cursor: pointer;
+    transition: opacity 0.12s ease-in-out;
+    display: none;
+}
+
+.sidebar #link {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.sidebar #link:hover {
+    opacity: 0.7;
+}
+
+.sidebar #link:active {
+    opacity: 0.5;
+}
+
+.show-sidebar {
+    display: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

@@ -20,7 +20,6 @@ const About = () => {
           </p>
 
           <h3>Why did I switch?</h3>
-          {/* <p>Well, its just to say I wanted a new challenge</p> */}
           <p>Well, at first, I had little or no idea about tech or coding. However, has time went on, I began to meet
             techies and have them as friends. They inspired me. I mean, they could easily make web pages and applications look
             astonishing by writing a few lines of code. I was mesmerized and wanted to try it too. I began to feel the huge

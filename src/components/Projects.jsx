@@ -18,7 +18,7 @@ const Projects = () => {
 
         <div className="project-card">
           <p>Todo-list App for keeping record of daily todos which has both light and dark mode
-            for the user’s preference <br /> Built with HTML, CSS and JavaScript.
+            for the user<span>&#39;</span>s preference <br /> Built with HTML, CSS and JavaScript.
           </p>
           <a href="https://omolaso.github.io/toDo/" target="_blank" rel="noopener noreferrer"> <button className="btn"> Todo List App</button> </a>
         </div>
