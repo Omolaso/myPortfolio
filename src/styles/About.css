@@ -13,7 +13,8 @@
     padding: 0.5rem 5rem;
     color: var(--lightGrey);
     line-height: 1.5;
-    color: var(--lightBlack)
+    color: var(--lightBlack);
+    min-height: 90vh;
 }
 
 .about-container h1{

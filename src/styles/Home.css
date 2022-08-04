@@ -5,7 +5,7 @@
 }
 
 .home-container-toggle{
-    padding-top: 10rem;
+    padding-top: 25rem;
 }
 
 .home-container{
@@ -13,8 +13,9 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 8.5rem 5rem;
+    padding: 0rem 5rem;
     background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
+    min-height: 90vh;
 }
 
 .home-container .text{
@@ -24,7 +25,7 @@
 
 .home-container .text h1{
     font-size: 80px;
-    margin-bottom: 0.3rem;
+    /* margin-bottom: 0.3rem; */
     font-family: cursive;
     /* border: 1px solid; */
 }
@@ -35,7 +36,7 @@
 }
 
 .home-container .text p{
-    line-height: 1.4;
+    line-height: 1.3;
     font-size: 20px;
 }
 
@@ -69,16 +70,15 @@
 }
 
 .home-container .text .hire-btn .learn{
-    margin: 0 0.5rem 0 0;
+    margin-right: 0.5rem;
 }
 
 /* media query */
 
 @media screen and (max-width: 768px) {
-    .home-container{
-        padding: 2.5rem 5rem;
-    }
-
+    /* .home-container{
+        padding: 3rem 5rem;
+    } */
     .home-container .text{
         text-align: center;
     }

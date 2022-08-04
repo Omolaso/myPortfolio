@@ -16,8 +16,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
-    height: 80px;
+    min-height: 10vh;
     background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
+    /* border-bottom: 1px solid var(--lightBlack); */
 }
 
 .nav-container .logo{

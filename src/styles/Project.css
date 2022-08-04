@@ -6,6 +6,7 @@
 }
 
 .project-container{
+    min-height: 90vh;
     padding: 2rem 5rem;
     background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
 }

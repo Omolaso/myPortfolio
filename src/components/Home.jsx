@@ -3,13 +3,10 @@ import me from '../images/me.jpg';
 import '../styles/Home.css';
 import { useNavigate } from 'react-router-dom';
 // import { handleHamburgerToggle } from '../redux-slice/HamburgerSlice';
-// import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const Home = () => {
-  // const dispatch = useDispatch();
-  // function handleHamburger(){
-  //   dispatch(handleHamburgerToggle())
-  // }
+ const { isHamActive } = useSelector((store) => store.hamburger)
 
 
   // navigate
@@ -26,8 +23,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="home-container">
-      {/* <div className={`home-container ${ handleHamburger() ? 'home-container-toggle' : ''} `}> */}
+      {/* <div className="home-container"> */}
+      <div className={`home-container ${isHamActive ? "home-container-toggle" : " "} `}>
         <section className='text'>
           <h1> Hi, I'm Tobi.</h1>
           <h2>A FRONTEND DEVELOPER</h2>

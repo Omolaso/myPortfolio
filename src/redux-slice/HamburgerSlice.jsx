@@ -15,9 +15,7 @@ const hamburgerSlice = createSlice({
         removeSideBar: (state) => {
             state.isHamActive = false;
         }
-        
     }
-    
 })
 
 

@@ -5,9 +5,10 @@
 }
 
 .contact-container{
-    padding: 1.5rem 5rem;
+    padding: 1rem 5rem;
     background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
     text-align: center;
+    min-height: 90vh;
 }
 
 .contact-container .contact h1{
