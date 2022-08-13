@@ -29,6 +29,12 @@ const Projects = () => {
         </div>
 
         <div className="project-card">
+          <p>Built an application form with HTML, CSS and JavaScript where interested candidates can fill up
+            the form and their details is stored in the local storage of the brower.</p>
+          <a href="https://developeraccessment.netlify.app/" target="_blank" rel="noopener noreferrer"> <button className="btn">Application Form</button> </a>
+        </div>
+
+        <div className="project-card">
           <p>A Joke App built with ReactJs for regular humor by fetching a free JSON API.</p>
           <a href="https://myjokeapp.netlify.app/" target="_blank" rel="noopener noreferrer"><button className="btn">My Joke App</button></a>
 
