@@ -29,8 +29,8 @@ const Projects = () => {
         </div>
 
         <div className="project-card">
-          <p>Built an application form with HTML, CSS and JavaScript where interested candidates can fill up
-            the form and their details is stored in the local storage of the browser.</p>
+          <p>Built an application form with HTML, CSS and JavaScript for a Point Of Sale &#40;POS&#41; registration 
+            where interested candidates can fill up the form and their details is stored in the local storage of the browser.</p>
           <a href="https://developeraccessment.netlify.app/" target="_blank" rel="noopener noreferrer"> <button className="btn">Application Form</button> </a>
         </div>
 
