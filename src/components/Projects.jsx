@@ -41,7 +41,7 @@ const Projects = () => {
         </div>
 
         <div className="project-card">
-          <p><em>To be completed soon:</em> <br /> An E-commerce website with ReactJs by fetching an API. </p>
+          <p>Built an E-commerce groceries website with ReactJs by fetching an API where entries to the forms in the website are stored in the local storage of the browser.</p>
           <a href="https://foodwebzerohunger.netlify.app/" target="_blank" rel="noopener noreferrer"> <button className="btn">Zerohunger</button> </a>
         </div>
 
