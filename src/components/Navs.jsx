@@ -21,7 +21,7 @@ const Navs = () => {
             <div className="logo">
                 <h3><Link to='/' id='link' className="h-logo"> Tobi Adesanya </Link></h3>
                 <div className='mobile'>
-                  <FontAwesomeIcon id='react' icon={faReact}/>
+                  <div><FontAwesomeIcon id='react' icon={faReact}/></div>
                   <div className="hamburger" onClick={ handleHamburger }>
                     <FontAwesomeIcon icon={ faBars } id='bars'/>
                   </div>
