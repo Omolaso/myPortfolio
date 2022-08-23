@@ -13,12 +13,12 @@ const Projects = () => {
           <p>A responsive landing page for a learning product for students between the age of 6 - 10. <br />
             Built with HTML, CSS and JavaScript.
           </p>
-          <a href="https://omolaso.github.io/Bright/" target="_blank" rel="noopener noreferrer"> <button className='btn'>Brightly landing page</button></a>
+          <a href="https://omolaso.github.io/Bright/" target="_blank" rel="noopener noreferrer"> <button className='btn'>Brightly Landing Page</button></a>
         </div>
 
         <div className="project-card">
           <p>Todo-list App for keeping record of daily todos which has both light and dark mode
-            for the user<span>&#39;</span>s preference <br /> Built with HTML, CSS and JavaScript.
+            for the user<span>&#39;</span>s preference. <br /> Built with HTML, CSS and JavaScript.
           </p>
           <a href="https://omolaso.github.io/toDo/" target="_blank" rel="noopener noreferrer"> <button className="btn"> Todo List App</button> </a>
         </div>
@@ -30,7 +30,7 @@ const Projects = () => {
 
         <div className="project-card">
           <p>Built an application form with HTML, CSS and JavaScript where interested candidates can fill up
-            the form and their details is stored in the local storage of the brower.</p>
+            the form and their details is stored in the local storage of the browser.</p>
           <a href="https://developeraccessment.netlify.app/" target="_blank" rel="noopener noreferrer"> <button className="btn">Application Form</button> </a>
         </div>
 
@@ -41,7 +41,7 @@ const Projects = () => {
         </div>
 
         <div className="project-card">
-          <p>Built an E-commerce groceries website with ReactJs by fetching an API where entries to the forms in the website are stored in the local storage of the browser.</p>
+          <p>Built an E-commerce grocery website with ReactJs by fetching an API. Entries to the forms in the website are stored in the local storage of the browser.</p>
           <a href="https://foodwebzerohunger.netlify.app/" target="_blank" rel="noopener noreferrer"> <button className="btn">Zerohunger</button> </a>
         </div>
 
