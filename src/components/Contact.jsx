@@ -31,12 +31,12 @@ const Contact = () => {
           </div>
 
           <div className="download">
-            <a href="https://drive.google.com/file/d/1cVR49gnUY3J4VduXGnMVTj_OLJVh-NU8/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
               rel="noopener noreferrer">
               <button className="btn">Download Resume</button>
             </a>
           </div>
-
+          
         </div>
 
          
