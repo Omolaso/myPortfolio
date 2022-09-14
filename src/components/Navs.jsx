@@ -16,18 +16,18 @@ const Navs = () => {
   }
 
   return (
-    <div className='container'>
-        <header className='nav-container'>
-            <div className="logo">
-                <h3><Link to='/' id='link' className="h-logo"> Tobi Adesanya </Link></h3>
-                <div className='mobile'>
+    <div className='bg-black'>
+        <header className=''>
+            <div className="">
+                <h3><Link to='/' id='link' className=""> Tobi Adesanya </Link></h3>
+                <div className=''>
                   <div><FontAwesomeIcon id='react' icon={faReact}/></div>
-                  <div className="hamburger" onClick={ handleHamburger }>
+                  <div className="" onClick={ handleHamburger }>
                     <FontAwesomeIcon icon={ faBars } id='bars'/>
                   </div>
                 </div>
             </div>
-            <ul className='nav-links'>
+            <ul className=''>
                 <li> <Link to='/Home' id='link'> Home </Link> </li>
                 <li> <Link to='/About' id='link'> About </Link> </li>
                 <li> <Link to='/Projects' id='link'> My Projects </Link> </li>

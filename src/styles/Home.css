@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -25,9 +25,7 @@
 
 .home-container .text h1{
     font-size: 80px;
-    /* margin-bottom: 0.3rem; */
     font-family: cursive;
-    /* border: 1px solid; */
 }
 
 .home-container .text h2{
@@ -73,16 +71,16 @@
     margin-right: 0.5rem;
 }
 
-/* media query */
+media query
 
 @media screen and (max-width: 768px) {
-    /* .home-container{
+    .home-container{
         padding: 3rem 5rem;
-    } */
+    }
     .home-container .text{
         text-align: center;
     }
     .home-container .image1{
         display: none ;
     }
-}
+} */
