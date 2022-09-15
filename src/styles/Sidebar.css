@@ -27,3 +27,51 @@
     width: 100%;
     transition: 5s ease-in-out;
 } */
+
+
+.bm-burger-bars{
+    background: #48B8A5;
+}
+
+.bm-burger-button{
+    display: none;
+    position: fixed;
+    width: 35px;
+    height: 20px;
+    top: 20px;
+    right: 35px;
+}
+
+
+.bm-cross{
+    background: #48B8A5;
+}
+
+
+.bm-cross-button{
+    height: 35px;
+    width: 35px;
+}
+
+.bm-menu{
+    background: #112240;
+    padding: 2.5rem 1.5rem ;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 150%;
+}
+
+/* .bm-item-list{
+    display: flex;
+    
+} */
+
+.hide-hamburger{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+  .bm-burger-button{
+        display: block;
+    }
+}
