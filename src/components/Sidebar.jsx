@@ -1,6 +1,8 @@
 // import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 // import { elastic as Menu } from "react-burger-menu";
+// import { stack as Menu } from "react-burger-menu";
+// import { bubble as Menu } from "react-burger-menu";
 import { slide as Menu } from "react-burger-menu";
 // import { useSelector, useDispatch } from 'react-redux';
 // import { removeSideBar } from '../redux-slice/HamburgerSlice';
@@ -32,12 +34,14 @@ const SideBar = () => {
             pageWrapId={ "page-wrap" } 
             outerContainerId={ "outer-container" }
             disableCloseOnEsc
-            right 
+            left
+            // noOverlay
+            // isOpen={true}
             // width={300}
             // className='flex-col items-center justify-center min-h-screen'
             >
 
-            <ul className='flex items-center justify-between flex-auto w-20 text-lightGrey text-sm font-medium'>
+            <ol className='text-lightGrey text-xl'>
                 <li> <Link to='/Home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </Link> </li>
                 <li> <Link to='/About' className='hover:text-lightGreen hover:transition ease-in-out'> About </Link> </li>
                 <li> <Link to='/Projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </Link> </li>
@@ -51,7 +55,7 @@ const SideBar = () => {
                     </button>
                   </a>
                 </li>
-            </ul>
+            </ol>
         </Menu>
     )
 }

@@ -19,7 +19,7 @@ const Navs = () => {
     <div id='wrapper'>
         <header className='flex items-center justify-between'>
             <div className=" flex-1">
-                <h3><Link to='/' className="text-white"> Tobi Adesanya </Link></h3>
+                <h3><Link to='/' className="text-white"> T </Link></h3>
                 <div className=''>
                   {/* <div><FontAwesomeIcon id='react' icon={faReact}/></div> */}
                   {/* <div className="" onClick={ handleHamburger }>

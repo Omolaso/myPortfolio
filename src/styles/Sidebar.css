@@ -42,11 +42,9 @@
     right: 35px;
 }
 
-
 .bm-cross{
     background: #48B8A5;
 }
-
 
 .bm-cross-button{
     height: 35px;
@@ -56,18 +54,19 @@
 .bm-menu{
     background: #112240;
     padding: 2.5rem 1.5rem ;
-    text-align: center;
-    font-size: 1.2rem;
-    height: 150%;
 }
 
-/* .bm-item-list{
-    display: flex;
-    
-} */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  color: lightGrey;
+}
 
-.hide-hamburger{
-    display: none;
+ol li{
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width:768px) {
