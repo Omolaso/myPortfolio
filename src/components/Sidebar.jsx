@@ -7,6 +7,7 @@ import { slide as Menu } from "react-burger-menu";
 // import { useSelector, useDispatch } from 'react-redux';
 // import { removeSideBar } from '../redux-slice/HamburgerSlice';
 import '../styles/Sidebar.css'
+// import menu from '../images/menu.png'
 
 const SideBar = () => {
     // const dispatch = useDispatch();
@@ -35,8 +36,11 @@ const SideBar = () => {
             outerContainerId={ "outer-container" }
             disableCloseOnEsc
             left
+            itemListElement="div"
+            disableAutoFocus
+            // customBurgerIcon={ <img src={menu} /> }
+            // onOpen={ handleOnOpen }
             // noOverlay
-            // isOpen={true}
             // width={300}
             // className='flex-col items-center justify-center min-h-screen'
             >
@@ -50,7 +54,8 @@ const SideBar = () => {
                   <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
                      rel="noopener noreferrer">
                     <button 
-                      className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80'>
+                      id="resume-btn"
+                      className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'>
                          Resume 
                     </button>
                   </a>

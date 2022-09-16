@@ -35,7 +35,8 @@ const Navs = () => {
                 <li> 
                   <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
                      rel="noopener noreferrer">
-                    <button 
+                    <button
+                      id="resume-btn"
                       className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80'>
                          Resume 
                     </button>
