@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../styles/About.css';
+import '../styles/About.css';
 
 const About = () => {
   return (
@@ -9,14 +9,29 @@ const About = () => {
         <article className='text-deepGrey text-lg mt-3 font-medium'>
           <p>Hi again&#128075;, I am Tobi and I enjoy building items that live on the web. </p>
 
-          <p className='my-2'>My interest in web development grew in early 2022 due to my inspiration from friends and my
+          <p className='my-2'>My interest in web development grew in early 2022 due to inspiration from friends and my
             desire to attain a technical skill.</p>
 
           <p className='my-2 leading-snug'>Prior to this, I was a Navigator. <br /> </p>
 
           <p className="my-2">Fast-forward to today, I&apos;ve had the priviledge to learn my web development skills from 
-            <a className='text-lightGreen' href="https://www.stutern.com/" target='_blank'> Stutern </a> 
+            <a className='text-lightGreen hover:underline' href="https://www.stutern.com/" target='_blank' rel="noreferrer"> Stutern </a>
+             and I&apos;ve had a few projects since then.
           </p>
+
+          <div id="skills">
+            <p className="my-2">The few technologies I&apos;m proficient with include: </p>
+            <div className="flex items-center justify-between w-3/4 md:w-2/4 text-sm">
+              <ol className='list-none'>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ol>
+              <ol className='list-none'>
+                <li>JavaScript</li>
+                <li>React Js</li>
+              </ol>
+            </div>
+          </div>
 
           {/* <h3>Why did I switch?</h3>
           <p>Well, at first, I had little or no idea about tech or coding. However, has time went on, I began to meet

@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/SharedLayout.css';
 // import { Outlet } from 'react-router-dom'
+// import { Routes, Route } from 'react-router-dom';
 import Navs from './Navs';
 import Home from './Home';
 import About from './About';
+import Projects from './Projects';
 
 
 const SharedLayout = () => {
@@ -16,13 +18,20 @@ const SharedLayout = () => {
 
       <main className='px-12 md:px-32 md:mt-12'>
 
+        
         <section className='mt-20 mb-44'>
-          <Home/>
+        <Home/>
         </section>
 
         <section className='my-24'>
           <About/>
         </section>
+
+        <section className='my-24'>
+          <Projects/>
+        </section>
+        
+        
 
       </main>
       
@@ -30,9 +39,15 @@ const SharedLayout = () => {
 
 
 
-      {/* <section>
-        <Outlet/>
-      </section> */}
+        {/* <section>
+          <Outlet/>
+        </section> */}
+{/* 
+        <Routes>
+         <Route path='/Home' element={ <Home/>}/>
+         <Route path='/About' element={ <About/>}/>
+         <Route path='/Home' element={ <Home/>}/>
+        </Routes> */}
     </div>
   )
 }

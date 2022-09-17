@@ -45,7 +45,7 @@ const SideBar = () => {
             // className='flex-col items-center justify-center min-h-screen'
             >
 
-            <ol className='text-lightGrey text-xl'>
+            <ul className='text-lightGrey text-xl'>
                 <li> <Link to='/Home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </Link> </li>
                 <li> <Link to='/About' className='hover:text-lightGreen hover:transition ease-in-out'> About </Link> </li>
                 <li> <Link to='/Projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </Link> </li>
@@ -60,7 +60,7 @@ const SideBar = () => {
                     </button>
                   </a>
                 </li>
-            </ol>
+            </ul>
         </Menu>
     )
 }
