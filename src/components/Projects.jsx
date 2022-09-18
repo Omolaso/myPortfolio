@@ -83,7 +83,7 @@ const Projects = () => {
             </Typography>
 
             <Typography variant="div" color="text.secondary">
-              <p className='text-lightGreen text-center'>Built a landing page for a learning product for students between the ages of 6 - 10.</p>
+              <p className='text-lightGreen text-center'>A landing page for a learning product for students between the ages of 6 - 10.</p>
               <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
                 <span>HTML</span>
                 <span>CSS</span>
