@@ -35,12 +35,15 @@ const Home = () => {
 
           <div className="mt-4">
             {/* <button onClick={about} id="resume-btn" className='border border-lightGreen mr-4 py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80'>Know more about me &#128521;</button> */}
-            <button id="resume-btn" className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80'>
-              <a href="#contact"> Hire Me </a>
-            </button>
+            <a href="#contact">
+              <button id="resume-btn" className='border font-medium  border-lightGreen py-3 px-10 rounded-md text-lightGreen hover:bg-opacity-80'>
+                Hire Me
+              </button>
+          </a>
           </div>
         </section>
-{/* 
+      
+{/*  
         <section className="">
           <img 
             className="" 

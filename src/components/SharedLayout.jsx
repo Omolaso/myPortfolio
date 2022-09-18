@@ -7,6 +7,7 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import Footer from './Footer';
 
 
 const SharedLayout = () => {
@@ -32,12 +33,15 @@ const SharedLayout = () => {
           <Projects/>
         </section>
 
-        <section className='my-24'>
+        <section className='my-20'>
           <Contact/>
         </section>
-        
-        
 
+
+        <section className='my-2'>
+          <Footer/>
+        </section>
+        
       </main>
       
 
