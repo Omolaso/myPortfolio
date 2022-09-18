@@ -39,10 +39,6 @@
     }
 } */
 
-#skills ol li{
-    
-}
-
 ol li::before {
   content: "⋆";
   color: #48B8A5;
@@ -50,3 +46,8 @@ ol li::before {
   display: inline-block; 
   width: 1rem;
 }
+
+/* hr{
+    width: 50%;
+    color: #8892B0;
+} */

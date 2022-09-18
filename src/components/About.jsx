@@ -3,8 +3,8 @@ import '../styles/About.css';
 
 const About = () => {
   return (
-    <div>
-        <h1 className='text-3xl text-lightGrey font-bold mb-2'>About Me</h1>
+    <div id='about' className='pt-20'>
+        <h1 className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>01.</span>About Me</h1>
 
         <article className='text-deepGrey text-lg mt-3 font-medium'>
           <p>Hi again&#128075;, I am Tobi and I enjoy building items that live on the web. </p>
@@ -21,7 +21,8 @@ const About = () => {
 
           <div id="skills">
             <p className="my-2">The few technologies I&apos;m proficient with include: </p>
-            <div className="flex items-center justify-between w-3/4 md:w-2/4 text-sm">
+            {/* <div className="flex items-center justify-between w-3/4 md:w-2/4 text-sm"> */}
+            <div className="flex items-center justify-between w-full max-w-xs text-base">
               <ol className='list-none'>
                 <li>HTML</li>
                 <li>CSS</li>

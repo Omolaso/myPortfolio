@@ -6,11 +6,12 @@ import Navs from './Navs';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
+import Contact from './Contact';
 
 
 const SharedLayout = () => {
   return (
-    <div className='min-h-screen bg-black py-4'>
+    <div className='min-h-screen bg-black pb-8'>
 
      <section className='px-8'>
         <Navs/>
@@ -19,7 +20,7 @@ const SharedLayout = () => {
       <main className='px-12 md:px-32 md:mt-12'>
 
         
-        <section className='mt-20 mb-44'>
+        <section className='mt-20 mb-40'>
         <Home/>
         </section>
 
@@ -27,8 +28,12 @@ const SharedLayout = () => {
           <About/>
         </section>
 
-        <section className='my-24'>
+        <section className='my-30'>
           <Projects/>
+        </section>
+
+        <section className='my-24'>
+          <Contact/>
         </section>
         
         

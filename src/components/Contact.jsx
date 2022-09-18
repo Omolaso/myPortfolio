@@ -1,16 +1,19 @@
 import React from 'react';
 import '../styles/Contact.css';
-import me from '../images/me.jpg';
+// import me from '../images/me.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
   return (
-    <div className='contact-container'>
-        <div className="contact">
-          <h1>Get in touch</h1>
-          <img src={me} alt="me" id='img' />
+    <div id='contact' className='border'>
+        <div className="">
+          <header>
+            <h1 className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>03.</span> Will like to say hello?</h1>
+          </header>
+          <h2>Get in touch</h2>
+          {/* <img src={me} alt="me" id='img' /> */}
           <div className="links">
 
             <a href="https://github.com/omolaso" target="_blank" rel="noopener noreferrer">
@@ -37,6 +40,13 @@ const Contact = () => {
             </a>
           </div>
           
+          <button>
+            <a href="#home"  
+              id="resume-btn"
+              className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80'>
+              ↑
+            </a>
+          </button>
         </div>
 
          

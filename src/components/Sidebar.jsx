@@ -1,5 +1,5 @@
 // import { useEffect } from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { elastic as Menu } from "react-burger-menu";
 // import { stack as Menu } from "react-burger-menu";
 // import { bubble as Menu } from "react-burger-menu";
@@ -45,12 +45,12 @@ const SideBar = () => {
             // className='flex-col items-center justify-center min-h-screen'
             >
 
-            <ul className='text-lightGrey text-xl'>
-                <li> <Link to='/Home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </Link> </li>
-                <li> <Link to='/About' className='hover:text-lightGreen hover:transition ease-in-out'> About </Link> </li>
-                <li> <Link to='/Projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </Link> </li>
-                <li> <Link to='/Contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</Link> </li>
-                <li> 
+            <ul className='text-lightGrey text-xl' id="nav">
+                {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
+                <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
+                <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </a> </li>
+                <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
+                <li id="nav-list"> 
                   <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
                      rel="noopener noreferrer">
                     <button 
