@@ -43,13 +43,6 @@ const Home = () => {
           </div>
         </section>
       
-{/*  
-        <section className="">
-          <img 
-            className="" 
-            src={me} 
-            alt="my_image" />
-        </section> */}
       </div>
     </>
   )

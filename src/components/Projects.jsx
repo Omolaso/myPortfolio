@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Brightly from '../images/Brightly.png';
 import Todo from '../images/todo.png';
+import Netflix from '../images/netflix.png';
 import Zerohunger from '../images/Zerohunger.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
@@ -105,11 +106,52 @@ const Projects = () => {
                 <FontAwesomeIcon icon={faLink} className='text-lg'/>
               </Button>
             </a>
-            
-           
           </CardActions>
-
         </Card>
+
+
+
+        {/* NETFLIX */}
+
+        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' id='resume-btn'>
+            <CardMedia
+              component="img"
+              height="100"
+              image={Netflix}
+              alt="Netflix"
+            />
+            <CardContent className='bg-black'>
+              <Typography variant='header' component="div">
+              <h2 className='text-xl text-lightGrey font-bold text-center'> Netflix </h2> 
+              </Typography>
+
+              <Typography variant="div" color="text.secondary">
+                <p className='text-lightGreen text-center'>A movie streaming platform clone.</p>
+                <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
+                  <span>React</span>
+                  <span>CSS</span>
+                  <span>Tailwind</span>
+                  <span>MovieDB API</span>
+                </div>
+              </Typography>
+            </CardContent>
+
+            <CardActions className='flex items-center justify-center bg-black'>
+              
+              <a href="https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT" target='_blank' rel="noopener noreferrer">
+                <Button size="small" title='GitHub'>
+                  <FontAwesomeIcon icon={faGithub} className='text-lg'/>
+                </Button>
+              </a>
+              
+              <a href="https://netflix-duplicate.netlify.app/" target='_blank' rel="noopener noreferrer">
+                <Button size="small" title='External Link'>
+                  <FontAwesomeIcon icon={faLink} className='text-lg'/>
+                </Button>
+              </a>
+            </CardActions>
+          </Card>
+
 
 
         {/* TODO-LIST */}
