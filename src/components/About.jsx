@@ -46,7 +46,7 @@ const About = () => {
               motivates me.</p> */}
           </article>
 
-          <section className='w-full max-w-sm mt-8 hover:opacity-90'>
+          <section className='w-full hidden md:block max-w-sm mt-8 hover:opacity-90'>
             <img 
               src={me} 
               alt="Me"
