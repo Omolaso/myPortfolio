@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
 
           <a href="https://linkedin.com/in/adesanyaoluwatobiloba/" target="_blank" rel="noopener noreferrer"> 
-            <FontAwesomeIcon id='linkedin' icon={faLinkedin} className='text-xl text-lightGrey hover:text-lightGreen'/> 
+            <FontAwesomeIcon id='linkedin' title='LinkedIn' icon={faLinkedin} className='text-xl text-lightGrey hover:text-lightGreen'/> 
           </a>
         </section>
 

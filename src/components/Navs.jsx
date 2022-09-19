@@ -21,7 +21,7 @@ const Navs = () => {
     <div id='home' className='pt-4'>
       <header className='flex items-center justify-between'>
           <div className="cursor-pointer">
-              <h1 className="text-white"> <Link to='/'> LOGO </Link>  </h1>
+              <h1 className="text-lightGrey font-extrabold"> <Link to='/'> Tobi Adesanya </Link>  </h1>
                 {/* <div className=''>
                   <div><FontAwesomeIcon id='react' icon={faReact}/></div>
                   <div className="" onClick={ handleHamburger }>
