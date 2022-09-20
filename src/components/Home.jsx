@@ -25,7 +25,7 @@ const Home = () => {
     <>
       {/* <div className={`home-container ${isHamActive ? "home-container-toggle" : " "} `}> */}
       <div>
-        <section className="text-left">
+        <section className="text-center md:text-left">
           <h3 id='home-h3' className='text-lg text-veryLightGrey font-medium' > Hi, my name is</h3>
           <h1 id='home-h1' className='text-4xl md:text-7xl mt-6 font-bold text-lightGrey'>Tobi Adesanya.</h1>
           <h2 id='home-h2' className='text-4xl md:text-7xl mt-3 font-bold text-deepGrey'> I build things for the web.</h2>

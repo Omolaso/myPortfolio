@@ -18,24 +18,24 @@ const Archive = () => {
     }
 
   return (
-    <div className='min-h-screen bg-black p-8'>
+    <div className=' min-h-screen md:min-h-screen bg-black px-8 pt-10 pb-20'>
         <header className='mb-8'>
-            <h1 className='text-7xl text-lightGrey font-bold mb-2'>Archive</h1>
+            <h1 className='text-4xl md:text-7xl text-lightGrey font-bold mb-2'>Archive</h1>
         </header>
 
        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             {/* BRIGHTLY */}
 
-            <Card className='w-full bg-black' id='archive-card'>
-                <CardContent className='bg-black'>
+            <Card id='archive-card' sx={{ backgroundColor: '#0A192F' }}>
+                <CardContent>
 
-                    <Typography variant='header' className='text-lightGrey'>
+                    <Typography variant='header'>
                         <h2 className='text-xl text-lightGrey font-bold text-center'> Brightly Landing Page </h2>
                     </Typography>
 
-                    <Typography sx={{ mb: 1.5 }} variant='div' className='text-lightGrey text-center'>
-                        <p>A responsive landing page for a learning product for students between the ages of 6 - 10 </p>
+                    <Typography variant='div' className='text-lightGrey text-center'>
+                        <p className='mt-2'>A landing page for a learning product for students between the ages of 6 - 10 </p>
                     </Typography>
 
                     <Typography variant="div">
@@ -47,15 +47,15 @@ const Archive = () => {
                     </Typography>
                 </CardContent>
 
-                <CardActions className='flex items-center justify-center bg-black'>
+                <CardActions className='flex items-center justify-center'>
                     <a href="https://github.com/Omolaso/Bright.git" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='GitHub'>
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
                         </Button>
                     </a>
                     <a href="https://omolaso.github.io/Bright/" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='External Link'>
-                            <FontAwesomeIcon icon={faLink}/>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
                         </Button>
                     </a>
                         
@@ -65,15 +65,15 @@ const Archive = () => {
         {/* JOKE APP */}
 
 
-            <Card className='w-full'  id='archive-card'>
-                <CardContent className='bg-black'>
+            <Card sx={{ backgroundColor: '#0A192F' }}  id='archive-card'>
+                <CardContent>
 
                     <Typography variant='header' className='text-lightGrey'>
-                        <h2 className='text-xl text-lightGrey font-bold text-center'> Joke App </h2>
+                        <h2 className='text-xl text-lightGrey font-bold text-center py-2'> Joke App </h2>
                     </Typography>
 
-                    <Typography sx={{ mb: 1.5 }} variant='div' className='text-lightGrey text-center'>
-                        <p>A Joke App for regular humor. </p>
+                    <Typography variant='div' className='text-lightGrey text-center'>
+                        <p>A Joke App from a joke API for regular humor. </p>
                     </Typography>
 
                     <Typography variant="div">
@@ -85,15 +85,15 @@ const Archive = () => {
                     </Typography>
                 </CardContent>
 
-                <CardActions className='flex items-center justify-center bg-black'>
+                <CardActions className='flex items-center justify-center'>
                     <a href="https://github.com/Omolaso/myJokeApp.git" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='GitHub'>
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
                         </Button>
                     </a>
                     <a href="https://myjokeapp.netlify.app/" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='External Link'>
-                            <FontAwesomeIcon icon={faLink}/>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
                         </Button>
                     </a>
                         
@@ -104,14 +104,14 @@ const Archive = () => {
         {/* APPLICATION FORM */}
 
 
-            <Card className='w-full bg-black'  id='archive-card'>
-                <CardContent className='bg-black'>
+            <Card sx={{ backgroundColor: '#0A192F' }}  id='archive-card'>
+                <CardContent>
 
                     <Typography variant='header' className='text-lightGrey'>
                         <h2 className='text-xl text-lightGrey font-bold text-center'> Application Form </h2>
                     </Typography>
 
-                    <Typography sx={{ mb: 1.5 }} variant='div' className='text-lightGrey text-center'>
+                    <Typography variant='div' className='text-lightGrey text-center'>
                         <p> An application form for a POS product where data inputs in the form are stored in the local storage of the browser. </p>
                     </Typography>
 
@@ -124,15 +124,15 @@ const Archive = () => {
                     </Typography>
                 </CardContent>
 
-                <CardActions className='flex items-center justify-center bg-black'>
+                <CardActions className='flex items-center justify-center'>
                     <a href="https://github.com/Omolaso/DeveloperAssessment.git" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='GitHub'>
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
                         </Button>
                     </a>
                     <a href="https://developeraccessment.netlify.app/" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='External Link'>
-                            <FontAwesomeIcon icon={faLink}/>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
                         </Button>
                     </a>
                 </CardActions>
@@ -141,16 +141,16 @@ const Archive = () => {
         {/* BASIC CALCULATOR */}
 
 
-            <Card className='w-full bg-black'  id='archive-card'>
-                <CardContent className='bg-black'>
+            <Card sx={{ backgroundColor: '#0A192F' }} id='archive-card'>
+                <CardContent >
 
                     <Typography variant='header' className='text-lightGrey'>
-                        <h2 className='text-xl text-lightGrey font-bold text-center'> Basic Calculator </h2>
+                        <h2 className='text-xl text-lightGrey font-bold text-center'> Calculator </h2>
                     </Typography>
 
-                    {/* <Typography sx={{ mb: 1.5 }} variant='div' className='text-lightGrey text-center'>
-                        <p>  </p>
-                    </Typography> */}
+                    <Typography variant='div' className='text-lightGrey text-center'>
+                        <p> A Basic Calculator. </p>
+                    </Typography>
 
                     <Typography variant="div">
                         <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
@@ -164,12 +164,12 @@ const Archive = () => {
                 <CardActions className='flex items-center justify-center bg-black'>
                     <a href="https://github.com/Omolaso/BasicCalculator.git" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='GitHub'>
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
                         </Button>
                     </a>
                     <a href="https://omolaso.github.io/BasicCalculator/" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='External Link'>
-                            <FontAwesomeIcon icon={faLink}/>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
                         </Button>
                     </a>
                 </CardActions>
@@ -177,21 +177,8 @@ const Archive = () => {
 
        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* <Link to='/'> Back </Link> */}
-        <div className='absolute left-0 right-10 mt-10 text-right'>
+        <div className='absolute left-0 right-5 mt-5 mb-10 text-right'>
             <button 
                 onClick={back}
                 title='Projects'

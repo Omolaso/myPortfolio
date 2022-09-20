@@ -85,7 +85,7 @@ const Projects = () => {
             </Typography>
 
             <Typography variant="div" color="text.secondary">
-              <p className='text-lightGreen text-center'>A code generator for generating rapid codes for websites.</p>
+              <p className='text-lightGreen text-center'>A code generator for generating rapid codes to access websites.</p>
               <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
                 <span>HTML</span>
                 <span>Tailwind</span>
@@ -197,31 +197,19 @@ const Projects = () => {
           </CardActions>
         </Card>
 
-        <div className="text-center text-lightGreen hover:underline">
-          <Link to='/archive'> View other projects </Link>
+        <div className="text-center text-lightGreen">
+        <Link to='/archive'> 
+          <button 
+            className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'
+            id="resume-btn"
+          >
+            View other projects
+          </button>
+        </Link>
         </div>
-       
-
-        
-          {/* CALCULATOR */}
-        {/* <div className="project-card">
-          <p>A basic calculator built with HTML, SASS and JavaScript.</p>
-          <a href="https://omolaso.github.io/BasicCalculator/" target="_blank" rel="noopener noreferrer"> <button className="btn">Basic Calculator</button> </a>
-        </div> */}
-
-        {/* INTERSWITCH FORM */}
-        {/* <div className="project-card">
-          <p>Built an application form with HTML, CSS and JavaScript for a Point Of Sale &#40;POS&#41; registration 
-            where interested candidates can fill up the form and their details is stored in the local storage of the browser.</p>
-          <a href="https://developeraccessment.netlify.app/" target="_blank" rel="noopener noreferrer"> <button className="btn">Application Form</button> </a>
-        </div> */}
-        {/* 
-        <div className="project-card">
-          <p>A Joke App built with ReactJs for regular humor by fetching a free JSON API.</p>
-          <a href="https://myjokeapp.netlify.app/" target="_blank" rel="noopener noreferrer"><button className="btn">My Joke App</button></a>
-        </div> */}
-
+      
       </div>
+
     </div>
   )
 }

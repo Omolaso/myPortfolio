@@ -9,14 +9,14 @@ const About = () => {
 
         <main className='md:flex flex-col items-center justify-between'>
           <article className='text-deepGrey text-lg mt-3 font-medium flex-1 px-4'>
-            <p>Hi again&#128075;, I am Tobi and I enjoy building items that live on the web. </p>
+            <p className='text-center md:text-left'>Hi again&#128075;, I am Tobi and I enjoy building items that live on the web. </p>
 
-            <p className='my-2'>My interest in web development grew in early 2022 due to inspiration from friends and my
+            <p className='my-2 text-center md:text-left'>My interest in web development grew in early 2022 due to inspiration from friends and my
               desire to attain a technical skill.</p>
 
-            <p className='my-2 leading-snug'>Prior to this, I was a Navigator. <br /> </p>
+            <p className='my-2 leading-snug text-center md:text-left'>Prior to this, I was a Navigator. <br /> </p>
 
-            <p className="my-2">Fast-forward to today, I&apos;ve had the priviledge to learn my web development skills from 
+            <p className="my-2 text-center md:text-left">Fast-forward to today, I&apos;ve had the priviledge to learn my web development skills from 
               <a className='text-lightGreen hover:underline' href="https://www.stutern.com/" target='_blank' rel="noreferrer"> Stutern </a>
               and I&apos;ve had a few projects since then.
             </p>
