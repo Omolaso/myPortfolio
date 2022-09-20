@@ -79,6 +79,15 @@
     box-shadow: 1px 1px 5px #48B8A5;
 }
 
+#archive-card{
+    box-shadow: 1px 1px 5px #48B8A5;
+    transition: ease-in-out 0.5s;
+}
+
+#archive-card:hover{
+    transform: translateY(-5px);
+}
+
 @media screen and (max-width:768px) {
   .bm-burger-button{
         display: block;

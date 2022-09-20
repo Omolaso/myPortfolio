@@ -4,7 +4,7 @@
 // import { stack as Menu } from "react-burger-menu";
 // import { bubble as Menu } from "react-burger-menu";
 import { slide as Menu } from "react-burger-menu";
-import { useState } from "react";
+// import { useState } from "react";
 // import { useSelector, useDispatch } from 'react-redux';
 // import { removeSideBar } from '../redux-slice/HamburgerSlice';
 import '../styles/Sidebar.css'
@@ -68,7 +68,7 @@ const SideBar = () => {
 
             <ul className='text-lightGrey text-xl' id="nav">
                 {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
-                <li id="nav-list" onClick={() => this.closeMenu()}> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
+                <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
                 <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </a> </li>
                 <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
                 <li id="nav-list"> 
