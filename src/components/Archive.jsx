@@ -185,7 +185,7 @@ const Archive = () => {
                     </Typography>
 
                     <Typography variant='div' className='text-lightGrey text-center'>
-                        <p> A Scientific Calculator with much functionalities. </p>
+                        <p> A Calculator with more functionalities. </p>
                     </Typography>
 
                     <Typography variant="div">

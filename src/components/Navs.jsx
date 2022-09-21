@@ -35,7 +35,7 @@ const Navs = () => {
               <li> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Work </a> </li>
               <li> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
               <li> 
-                <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
+                <a href="https://drive.google.com/file/d/1r04q2Ba3BRegQTRqJqfcjXc9sB3kRdTj/view?usp=sharing" target="_blank"
                    rel="noopener noreferrer">
                   <button
                     id="resume-btn"
