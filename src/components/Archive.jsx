@@ -27,7 +27,7 @@ const Archive = () => {
 
             {/* BRIGHTLY */}
 
-            <Card id='archive-card' sx={{ backgroundColor: '#0A192F' }}>
+            <Card id='archive-card' sx={{ backgroundColor: '#112240' }}>
                 <CardContent>
 
                     <Typography variant='header'>
@@ -65,7 +65,7 @@ const Archive = () => {
         {/* JOKE APP */}
 
 
-            <Card sx={{ backgroundColor: '#0A192F' }}  id='archive-card'>
+            <Card sx={{ backgroundColor: '#112240' }}  id='archive-card'>
                 <CardContent>
 
                     <Typography variant='header' className='text-lightGrey'>
@@ -104,7 +104,7 @@ const Archive = () => {
         {/* APPLICATION FORM */}
 
 
-            <Card sx={{ backgroundColor: '#0A192F' }}  id='archive-card'>
+            <Card sx={{ backgroundColor: '#112240' }}  id='archive-card'>
                 <CardContent>
 
                     <Typography variant='header' className='text-lightGrey'>
@@ -138,10 +138,10 @@ const Archive = () => {
                 </CardActions>
             </Card>
 
+
         {/* BASIC CALCULATOR */}
 
-
-            <Card sx={{ backgroundColor: '#0A192F' }} id='archive-card'>
+            <Card sx={{ backgroundColor: '#112240' }} id='archive-card'>
                 <CardContent >
 
                     <Typography variant='header' className='text-lightGrey'>
@@ -161,13 +161,49 @@ const Archive = () => {
                     </Typography>
                 </CardContent>
 
-                <CardActions className='flex items-center justify-center bg-black'>
+                <CardActions className='flex items-center justify-center'>
                     <a href="https://github.com/Omolaso/BasicCalculator.git" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='GitHub'>
                             <FontAwesomeIcon icon={faGithub} className='text-lg'/>
                         </Button>
                     </a>
                     <a href="https://omolaso.github.io/BasicCalculator/" target='_blank' rel="noopener noreferrer">
+                        <Button size="large" title='External Link'>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
+                        </Button>
+                    </a>
+                </CardActions>
+            </Card>
+
+        {/* SCIENTIFIC CALCULATOR */}
+
+            <Card sx={{ backgroundColor: '#112240' }} id='archive-card'>
+                <CardContent >
+
+                    <Typography variant='header' className='text-lightGrey'>
+                        <h2 className='text-xl text-lightGrey font-bold text-center'> Scientific Calculator </h2>
+                    </Typography>
+
+                    <Typography variant='div' className='text-lightGrey text-center'>
+                        <p> A Scientific Calculator with much functionalities. </p>
+                    </Typography>
+
+                    <Typography variant="div">
+                        <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
+                            <span>HTML</span>
+                            <span>Tailwind</span>
+                            <span>JavaScript</span>
+                        </section>
+                    </Typography>
+                </CardContent>
+
+                <CardActions className='flex items-center justify-center'>
+                    <a href="https://github.com/Omolaso/Scientific-Calculator.git" target='_blank' rel="noopener noreferrer">
+                        <Button size="large" title='GitHub'>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
+                        </Button>
+                    </a>
+                    <a href="https://omolaso.github.io/Scientific-Calculator/" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='External Link'>
                             <FontAwesomeIcon icon={faLink} className='text-lg'/>
                         </Button>

@@ -14,6 +14,7 @@ module.exports = {
         sans:['Poppins', 'sans-serif']
       },
       colors:{
+        lightBlack: '#112240',
         black: '#0A192F',
         lightGreen: '#48B8A5',
         veryLightGrey: '#53D3B9',

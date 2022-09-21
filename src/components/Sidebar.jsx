@@ -49,40 +49,42 @@ const SideBar = () => {
     // }
   
     return (
-        <Menu 
-            pageWrapId={ "page-wrap" } 
-            outerContainerId={ "outer-container" }
-            disableCloseOnEsc
-            left
-            itemListElement="div"
-            disableAutoFocus
-            // isOpen={this.state.menuOpen}
-            // onStateChange={(state) => this.handleStateChange(state)}
-            // isOpen = {false}
-            // customBurgerIcon={ <img src={menu} /> }
-            // onOpen={ handleOnOpen }
-            // noOverlay
-            // width={300}
-            // className='flex-col items-center justify-center min-h-screen'
-            >
+        <div id="outer-container">
+            <Menu 
+              pageWrapId={ "page-wrap" } 
+              outerContainerId={ "outer-container" }
+              disableCloseOnEsc
+              left
+              itemListElement="div"
+              disableAutoFocus
+              // isOpen={this.state.menuOpen}
+              // onStateChange={(state) => this.handleStateChange(state)}
+              // isOpen = {false}
+              // customBurgerIcon={ <img src={menu} /> }
+              // onOpen={ handleOnOpen }
+              // noOverlay
+              // width={300}
+              // className='flex-col items-center justify-center min-h-screen'
+              >
 
-            <ul className='text-lightGrey text-xl' id="nav">
-                {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
-                <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
-                <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </a> </li>
-                <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
-                <li id="nav-list"> 
-                  <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
-                     rel="noopener noreferrer">
-                    <button 
-                      id="resume-btn"
-                      className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'>
-                         Resume 
-                    </button>
-                  </a>
-                </li>
-            </ul>
-        </Menu>
+              <ul className='text-lightGrey text-xl overflow-auto' id="page-wrap">
+                  {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
+                  <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
+                  <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </a> </li>
+                  <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
+                  <li id="nav-list"> 
+                    <a href="https://drive.google.com/file/d/1XLGTFc-7hCA1IF97vLYhOdAIvwmNok2J/view?usp=sharing" target="_blank"
+                      rel="noopener noreferrer">
+                      <button 
+                        id="resume-btn"
+                        className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'>
+                          Resume 
+                      </button>
+                    </a>
+                  </li>
+              </ul>
+            </Menu>
+          </div>
     )
 }
 
