@@ -1,74 +1,54 @@
 // import { useEffect } from 'react';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { elastic as Menu } from "react-burger-menu";
 // import { stack as Menu } from "react-burger-menu";
 // import { bubble as Menu } from "react-burger-menu";
-import { slide as Menu } from "react-burger-menu";
-// import { useState } from "react";
+// import { slide as Menu } from "react-burger-menu";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { faClose } from '@fortawesome/free-solid-svg-icons';
 // import { useSelector, useDispatch } from 'react-redux';
 // import { removeSideBar } from '../redux-slice/HamburgerSlice';
 import '../styles/Sidebar.css'
+// import { Fab } from "@mui/material";
 // import menu from '../images/menu.png'
 
-const SideBar = () => {
-    // const dispatch = useDispatch();
-    // const { isHamActive } = useSelector((store) => store.hamburger);
-
-    // useEffect(() => {
-    //     function removeSide() {
-    //       dispatch(removeSideBar())
-    //     }
+const SideBar = () => {  
     
-    //     window.addEventListener('resize', removeSide);
-    //     window.addEventListener('scroll', removeSide);
-    //   })
+    const [ sidebar, showSidebar ] = useState(false);
 
-    // function removeSide() {
-    //     dispatch(removeSideBar())
-    //   }
-  
-    //   window.addEventListener('resize', removeSide);
-    //   window.addEventListener('scroll', removeSide);
+    const handleSidebar = () => {
+      showSidebar(!sidebar)  
+    }
 
-    // constructor (props); {
-    //   super(props)
-    //   this.state = {
-    //     menuOpen: false
-    //   }
-    // }
-     
-    
-    // const [ state, setState ] = useState(false);
+    const removeSidebar = () => {
+      showSidebar(false)
+    }
 
-    // function handleStateChange(state) {
-    //   this.setState({menuOpen: state.isOpen})  
-    // }
 
-    // function closeMenu() {
-    //   this.setState({menuOpen: false})
-    // }
+
+      window.addEventListener('resize', removeSidebar);
+      window.addEventListener('scroll', removeSidebar);
+
   
     return (
-        <div id="outer-container">
-            <Menu 
-              pageWrapId={ "page-wrap" } 
+        <>
+            {/* <Menu  */}
+              {/* pageWrapId={ "page-wrap" } 
               outerContainerId={ "outer-container" }
               disableCloseOnEsc
               left
               itemListElement="div"
               disableAutoFocus
-              // isOpen={this.state.menuOpen}
-              // onStateChange={(state) => this.handleStateChange(state)}
               // isOpen = {false}
-              // customBurgerIcon={ <img src={menu} /> }
-              // onOpen={ handleOnOpen }
-              // noOverlay
-              // width={300}
+              onOpen={ handleStateChange }
+              
+             
               // className='flex-col items-center justify-center min-h-screen'
-              >
+            > */}
 
-              <ul className='text-lightGrey text-xl overflow-auto' id="page-wrap">
-                  {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
+              {/* <ul className='text-lightGrey text-xl overflow-auto' id="page-wrap">
                   <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
                   <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </a> </li>
                   <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
@@ -82,9 +62,47 @@ const SideBar = () => {
                       </button>
                     </a>
                   </li>
+              </ul> */}
+            {/* </Menu> */}
+
+            {/* LIBRARY ENDS */}
+
+
+
+            <div className="flex items-center justify-between cursor-pointer">
+              <h1 className="text-lightGrey font-extrabold"> <Link to='/'> Tobi Adesanya </Link>  </h1>
+              <div className="block md:hidden">
+                <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className='text-lightGreen text-3xl hover:opacity-80'/>
+              </div>
+            </div>
+
+            <nav className={sidebar ? 'sidebar-active' : 'sidebar'} onClick={handleSidebar}>
+              {/* <div>
+                <Link to='#'>
+                  <FontAwesomeIcon icon={faClose} className='text-lightGreen text-xl hover:opacity-80'/>
+                </Link>
+              </div> */}
+              <ul className='text-lightGrey text-xl'>
+                <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
+                <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> My Projects </a> </li>
+                <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
+                <li id="nav-list"> 
+                  <a href="https://drive.google.com/file/d/1r04q2Ba3BRegQTRqJqfcjXc9sB3kRdTj/view?usp=sharing" target="_blank"
+                    rel="noopener noreferrer">
+                    <button 
+                      id="resume-btn"
+                      className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'>
+                        Resume 
+                   </button>
+                  </a>
+                </li>
               </ul>
-            </Menu>
-          </div>
+            </nav>
+
+
+            
+
+          </>
     )
 }
 
