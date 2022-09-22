@@ -73,7 +73,7 @@ const Archive = () => {
                     </Typography>
 
                     <Typography variant='div' className='text-lightGrey text-center'>
-                        <p>A Joke App from a joke API for regular humor. </p>
+                        <p>A Joke App for regular humor. </p>
                     </Typography>
 
                     <Typography variant="div">
