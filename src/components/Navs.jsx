@@ -1,11 +1,11 @@
 import React from 'react';
 // import '../styles/Nav.css'
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faReact } from '@fortawesome/free-brands-svg-icons';
 // import { handleHamburgerToggle } from '../redux-slice/HamburgerSlice';
 // import { useDispatch } from 'react-redux';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from '../components/Sidebar';
 
 
