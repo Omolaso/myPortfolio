@@ -7,7 +7,7 @@ const About = () => {
     <div id='about' className='pt-20'>
         <h1 className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>01.</span>About Me</h1>
 
-        <main className='md:flex flex-col items-center justify-between'>
+        <main className='flex lg:flex-row flex-col items-center justify-between'>
           <article className='text-deepGrey text-lg mt-3 font-medium flex-1 px-4'>
             <p className='text-center md:text-left'>Hi again&#128075;, I am Tobi and I enjoy building items that live on the web. </p>
 
@@ -37,7 +37,7 @@ const About = () => {
             </div>
           </article>
 
-          <section className='w-full hidden md:block max-w-sm mt-8 hover:opacity-90'>
+          <section className='w-full max-w-sm mt-8 hover:opacity-90'>
             <img 
               src={me} 
               alt="Me"

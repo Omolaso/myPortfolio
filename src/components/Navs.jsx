@@ -35,7 +35,7 @@ const Navs = () => {
           <ul className='hidden md:flex items-center justify-between flex-auto max-w-xl text-lightGrey text-sm font-medium'>
               {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
               <li> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
-              <li> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Work </a> </li>
+              <li> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Projects </a> </li>
               <li> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
               <li> 
                 <a href="https://drive.google.com/file/d/1r04q2Ba3BRegQTRqJqfcjXc9sB3kRdTj/view?usp=sharing" target="_blank"
