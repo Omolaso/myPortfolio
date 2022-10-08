@@ -73,8 +73,6 @@ const SideBar = () => {
               <h1 className="text-lightGrey font-extrabold"> <Link to='/'> Tobi Adesanya </Link>  </h1>
               <div className="block md:hidden">
                 <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className={ sidebar ? 'menuOpen-active' : 'menuOpen'}/>
-                {/* <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className='text-lightGreen text-3xl hover:opacity-80'/> */}
-                {/* <FontAwesomeIcon icon={ faClose } onClick={removeSidebar} id='bars' className='text-lightGreen text-3xl hover:opacity-80'/> */}
                 <FontAwesomeIcon icon={ faClose } onClick={removeSidebar} id='bars' className={ sidebar ? 'menuClose-active' : 'menuClose'}/>
               </div>
             </div>
