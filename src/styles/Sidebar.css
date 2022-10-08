@@ -23,6 +23,43 @@
     margin-bottom: 15px;
 }
 
+/* FOR HAMBURGER */
+
+.menuOpen-active{
+    display: none;
+}
+
+.menuOpen{
+    display: block;
+    color:#48B8A5 ;
+    font-size: 30px;
+
+}
+
+.menuOpen:hover{
+    opacity: 0.8;
+}
+
+.menuClose{
+    display: none;
+}
+
+.menuClose-active{
+    display: block;
+    color:#48B8A5 ;
+    font-size: 30px;
+}
+
+.menuClose-active:hover{
+    opacity: 0.8;
+}
+
+
+
+/* FOR HAMBURGER */
+
+
+
 
 /* ADDITIONAL STYLES */
 

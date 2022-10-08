@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import { slide as Menu } from "react-burger-menu";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 // import { faClose } from '@fortawesome/free-solid-svg-icons';
 // import { useSelector, useDispatch } from 'react-redux';
 // import { removeSideBar } from '../redux-slice/HamburgerSlice';
@@ -72,7 +72,10 @@ const SideBar = () => {
             <div className="flex items-center justify-between cursor-pointer">
               <h1 className="text-lightGrey font-extrabold"> <Link to='/'> Tobi Adesanya </Link>  </h1>
               <div className="block md:hidden">
-                <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className='text-lightGreen text-3xl hover:opacity-80'/>
+                <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className={ sidebar ? 'menuOpen-active' : 'menuOpen'}/>
+                {/* <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className='text-lightGreen text-3xl hover:opacity-80'/> */}
+                {/* <FontAwesomeIcon icon={ faClose } onClick={removeSidebar} id='bars' className='text-lightGreen text-3xl hover:opacity-80'/> */}
+                <FontAwesomeIcon icon={ faClose } onClick={removeSidebar} id='bars' className={ sidebar ? 'menuClose-active' : 'menuClose'}/>
               </div>
             </div>
 
