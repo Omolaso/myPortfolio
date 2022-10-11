@@ -33,7 +33,6 @@
     display: block;
     color:#48B8A5 ;
     font-size: 30px;
-
 }
 
 .menuOpen:hover{
@@ -64,7 +63,7 @@
 /* ADDITIONAL STYLES */
 
 #archive-card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-7px);
 }
 
 #resume-btn:hover{

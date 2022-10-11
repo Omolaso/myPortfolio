@@ -211,6 +211,45 @@ const Archive = () => {
                 </CardActions>
             </Card>
 
+
+        {/* SPOTIFY */}
+
+            <Card sx={{ backgroundColor: '#112240' }} id='archive-card'>
+                <CardContent >
+
+                    <Typography variant='header' className='text-lightGrey'>
+                        <h2 className='text-xl text-lightGrey font-bold text-center'>
+                            Spotify <span className='text-lightGreen text-xs font-medium'>&#40;coming soon&#41;</span>
+                        </h2>           
+                    </Typography>
+
+                    <Typography variant='div' className='text-lightGrey text-center'>
+                        <p> A music streaming platform. </p>
+                    </Typography>
+
+                    <Typography variant="div">
+                        <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
+                            <span>ReactJs</span>
+                            <span>Tailwind</span>
+                            <span>CSS</span>
+                        </section>
+                    </Typography>
+                </CardContent>
+
+                <CardActions className='flex items-center justify-center'>
+                    <a href="https://github.com/Omolaso/spotify" target='_blank' rel="noopener noreferrer">
+                        <Button size="large" title='GitHub'>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
+                        </Button>
+                    </a>
+                    <a href="https://spotifyduplicate.netlify.app" target='_blank' rel="noopener noreferrer">
+                        <Button size="large" title='External Link'>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
+                        </Button>
+                    </a>
+                </CardActions>
+            </Card>
+
        </div>
 
         {/* <Link to='/'> Back </Link> */}
