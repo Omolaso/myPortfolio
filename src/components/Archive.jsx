@@ -224,7 +224,7 @@ const Archive = () => {
                     </Typography>
 
                     <Typography variant='div' className='text-lightGrey text-center'>
-                        <p> A music streaming platform. </p>
+                        <p> A music streaming platform clone. </p>
                     </Typography>
 
                     <Typography variant="div">

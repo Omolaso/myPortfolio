@@ -23,7 +23,6 @@ const Home = () => {
 
   return (
     <>
-      {/* <div className={`home-container ${isHamActive ? "home-container-toggle" : " "} `}> */}
       <div>
         <section className="text-center md:text-left">
           <h3 id='home-h3' className='text-lg text-veryLightGrey font-medium' > Hi, my name is</h3>
@@ -34,12 +33,11 @@ const Home = () => {
                {/* <p> I&apos;m not familiar with.</p> */}
 
           <div className="mt-4">
-            {/* <button onClick={about} id="resume-btn" className='border border-lightGreen mr-4 py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80'>Know more about me &#128521;</button> */}
             <a href="#projects">
               <button id="resume-btn" className='border font-medium  border-lightGreen py-3 px-10 rounded-md text-lightGreen hover:bg-opacity-80'>
-               Check out my projects
+                Check out my projects
               </button>
-          </a>
+            </a>
           </div>
         </section>
       
