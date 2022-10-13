@@ -52,7 +52,7 @@ const Navs = () => {
 
 
   return (
-    <div id='home' className='pt-4'>
+    <div id='home' className='py-4'>
       <header className='flex items-center justify-between'>
           <motion.div   
             variants={container}

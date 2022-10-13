@@ -1,13 +1,47 @@
 import React from 'react';
 import '../styles/About.css';
 import me from '../images/me.jpg';
+import { motion } from 'framer-motion';
+
+// FRAMER MOTION
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 1,
+      staggerChildren: 0.3,
+    }
+  }
+};
+
+const item = {
+  hidden: { y: 0, opacity: 0 },
+  visible: {
+    y: 10,
+    opacity: 1
+  }
+};
+
+// FRAMER MOTION
+
+
+
 
 const About = () => {
   return (
-    <div id='about' className='pt-20'>
-        <h1 className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>01.</span>About Me</h1>
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      id='about' 
+      className='pt-20'
+      >
+        <motion.h1 variants={item} className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>01.</span>About Me</motion.h1>
 
-        <main className='flex lg:flex-row flex-col items-center justify-between'>
+        <motion.main variants={item} className='flex lg:flex-row flex-col items-center justify-between'>
           <article className='text-deepGrey text-lg mt-3 font-medium flex-1 px-4'>
             <p className='text-center md:text-left'>Hi again&#128075;, I am Tobi and I enjoy building items that live on the web. </p>
 
@@ -45,8 +79,8 @@ const About = () => {
             />
           </section>
 
-        </main>
-    </div>
+        </motion.main>
+    </motion.div>
   )
 }
 

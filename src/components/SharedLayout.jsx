@@ -13,14 +13,14 @@ import Footer from './Footer';
 
 const SharedLayout = () => {
   return (
-    <div className='min-h-screen bg-black pb-8'>
+    <div className='min-h-screen bg-black pb-8 '>
 
    
-        <section className='px-8'>
+        <section className='px-8 md:px-12'>
             <Navs/>
         </section>
 
-        <main className='px-12 md:px-32 md:mt-12'>
+        <main className='md:mt-12 px-12'>
 
           
           <section className='mt-20 mb-40'>
