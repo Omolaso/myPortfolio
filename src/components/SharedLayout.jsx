@@ -1,7 +1,5 @@
 import * as React from 'react';
 import '../styles/SharedLayout.css';
-// import { Outlet } from 'react-router-dom'
-// import { Routes, Route } from 'react-router-dom';
 import Navs from './Navs';
 import Home from './Home';
 import About from './About';

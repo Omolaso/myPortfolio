@@ -16,6 +16,14 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
+
+// FRAMER MOTION
+
+
+
+// FRAMER MOTION
+
+
 const Projects = () => {
   return (
     <div id='projects' className='py-20'>
@@ -24,11 +32,15 @@ const Projects = () => {
         <h1 className='text-3xl text-lightGrey font-bold mb-2'> <span className='text-lightGreen text-xl mr-2'>02.</span> Some things I&apos;ve built</h1>
      </header>
 
+
+
       <div className='text-deepGrey text-lg mt-4 font-medium'>
 
         {/* ZEROHUNGER */}
-
-        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' id='resume-btn'>
+        <Card 
+          className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' 
+          id='resume-btn'
+          >
             <CardMedia
               component="img"
               height="100"
