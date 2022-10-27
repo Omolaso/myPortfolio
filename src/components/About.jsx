@@ -18,14 +18,13 @@ const About = () => {
             <p className='my-2 leading-snug text-center md:text-left'>Prior to this, I was a Navigator. <br /> </p>
 
             <p className="my-2 text-center md:text-left">Fast-forward to today, I&apos;ve had the priviledge to learn my web development skills from 
-              <a className='text-lightGreen hover:underline' href="https://www.stutern.com/" target='_blank' rel="noreferrer"> Stutern </a>
+              <a className='stutern-link' href="https://www.stutern.com/" target='_blank' rel="noreferrer"> Stutern </a>
               and I&apos;ve had a few projects since then.
             </p>
 
             <div id="skills">
-              <p className="my-2">The few technologies I&apos;m proficient with include: </p>
-              {/* <div className="flex items-center justify-between w-3/4 md:w-2/4 text-sm"> */}
-              <div className="flex items-center justify-between w-full max-w-xs text-base">
+              <p className="my-2 text-center md:text-left">The few technologies I&apos;m proficient with include: </p>
+              <div className="flex items-center justify-between w-full max-w-xs text-base mx-auto md:mx-0">
                 <ol className='list-none'>
                   <li>HTML</li>
                   <li>CSS</li>

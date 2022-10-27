@@ -1,7 +1,5 @@
 import React from 'react';
-// import me from '../images/me.jpg';
 import '../styles/Home.css';
-// import { useNavigate } from 'react-router-dom';
 // import { handleHamburgerToggle } from '../redux-slice/HamburgerSlice';
 // import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
@@ -15,7 +13,7 @@ const container = {
     scale: 1,
     transition: {
       delayChildren: 1,
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
     }
   }
 };

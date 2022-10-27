@@ -64,7 +64,7 @@
 
 
 
-/* ADDITIONAL STYLES */
+/* ADDITIONAL STYLES FOR ARCHIVE */
 
 #archive-card:hover{
     transform: translateY(-7px);
@@ -79,4 +79,17 @@
     transition: ease-in-out 0.5s;
 }
 
-/* ADDITIONAL STYLES FINISH */
+/* ADDITIONAL STYLES FOR ARCHIVE */
+
+
+
+/* ADDITIONAL STYLE FOR GO UP CHEVRON */
+#go-up{
+    transition: 0.2s;
+}
+
+#go-up:hover{
+    transform: translateY(-2px);
+}
+
+/* ADDITIONAL STYLE FOR GO UP CHEVRON */

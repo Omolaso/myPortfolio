@@ -1,44 +1,3 @@
-/* *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.forHamburger{
-    padding-top: 10%;
-}
-
-.about-container{
-    background: linear-gradient(to right, var(--lightGreen), var( --blueGrey));
-    padding: 0.5rem 5rem;
-    color: var(--lightGrey);
-    line-height: 1.5;
-    color: var(--lightBlack);
-    min-height: 90vh;
-}
-
-.about-container h1{
-    font-size: 50px;
-    text-align: center;
-    color: var(--lightBlack)
-}
-
-.about-container h3{
-    font-size: 30px;
-    color: var(--lightBlack)
-}
-
-.about-container p{
-    font-size: 20px;
-    padding: 0.5rem 0;
-}
-
-@media screen and (max-width:768px) {
-    .about-container{
-        text-align: center;
-    }
-} */
-
 ol li::before {
   content: "⋆";
   color: #48B8A5;
@@ -46,3 +5,30 @@ ol li::before {
   display: inline-block; 
   width: 1rem;
 }
+
+/* STUTERN LINK */
+
+.stutern-link {
+    position: relative;
+    color: #48B8A5;
+}
+
+.stutern-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #48B8A5;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.stutern-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* STUTERN LINK */

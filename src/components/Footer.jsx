@@ -36,10 +36,10 @@ const Footer = () => {
         <section className='absolute left-0 right-3 text-right'>
           <a href="#home" 
             // id="resume-btn"
-            title='Go up'
+            title='Up'
             // className='border-lightGreen rounded-md text-lightGreen border'
           >
-            <FontAwesomeIcon icon={faChevronUp} className="text-3xl text-lightGreen hover:opacity-70"/>
+            <FontAwesomeIcon icon={faChevronUp} id='go-up' className="text-3xl text-lightGreen"/>
           </a>
        </section>
 
