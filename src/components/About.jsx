@@ -28,16 +28,17 @@ const About = () => {
                 <ol className='list-none'>
                   <li>HTML</li>
                   <li>CSS</li>
+                  {/* <li>Tailwind CSS</li> */}
                 </ol>
                 <ol className='list-none'>
                   <li>JavaScript</li>
-                  <li>React Js</li>
+                  <li>ReactJs</li>
                 </ol>
               </div>
             </div>
           </article>
 
-          <section className='w-full max-w-sm mt-8 hover:opacity-90'>
+          <section className='w-full max-w-sm mt-10 hover:opacity-90'>
             <img 
               src={me} 
               alt="Me"
