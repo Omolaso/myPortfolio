@@ -14,15 +14,27 @@ import Zerohunger from '../images/Zerohunger.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
+function Div({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-
-// FRAMER MOTION
-
-
-
-// FRAMER MOTION
-
+  return (
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(500px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  )
+}
 
 const Projects = () => {
   return (
@@ -37,10 +49,10 @@ const Projects = () => {
       <div className='text-deepGrey text-lg mt-4 font-medium'>
 
         {/* ZEROHUNGER */}
-        <Card 
-          className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' 
-          id='resume-btn'
-          >
+        <Div>
+          <Card 
+            className='w-full mx-auto max-w-4xl mt-10 mb-24' 
+            >
             <CardMedia
               component="img"
               height="100"
@@ -79,12 +91,13 @@ const Projects = () => {
               </a>
             </CardActions>
           </Card>
-
+        </Div>
+        
 
 
         {/* QR CODE GENERATOR */}
 
-        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' id='resume-btn'>
+        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24'>
           <CardMedia
             component="img"
             height="100"
@@ -126,7 +139,7 @@ const Projects = () => {
 
         {/* NETFLIX */}
 
-        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' id='resume-btn'>
+        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24'>
             <CardMedia
               component="img"
               height="100"
@@ -169,7 +182,7 @@ const Projects = () => {
 
         {/* TODO-LIST */}
 
-        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24 hover:opacity-80' id='resume-btn'>
+        <Card className='w-full mx-auto max-w-4xl mt-10 mb-24'>
           <CardMedia
             component="img"
             height="100"

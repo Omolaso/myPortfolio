@@ -1,11 +1,32 @@
 import React from 'react';
 import '../styles/About.css';
 import me from '../images/me.jpg';
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
+function Div({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(0px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
 
 
 const About = () => {
   return (
-    <div id='about' className='pt-20'>
+    <Div id='about' className='pt-20'>
         <h1 className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>01.</span>About Me</h1>
 
         <main className='flex lg:flex-row flex-col items-center justify-between'>
@@ -47,7 +68,7 @@ const About = () => {
           </section>
 
         </main>
-    </div>
+    </Div>
   )
 }
 
