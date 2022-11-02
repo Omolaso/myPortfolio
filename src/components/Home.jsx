@@ -12,8 +12,8 @@ const container = {
     opacity: 1,
     scale: 1,
     transition: {
-      delayChildren: 1,
-      staggerChildren: 0.2,
+      delayChildren: 1.5, //all children
+      staggerChildren: 0.1, //each child
     }
   }
 };
@@ -32,19 +32,6 @@ const item = {
 
 const Home = () => {
 //  const { isHamActive } = useSelector((store) => store.hamburger)
-
-
-  // navigate
-
-  // const navigate = useNavigate()
-  // const hire = () => {
-  //   navigate('/Contact')
-  // };
-  // const about = () => {
-  //   navigate('/About')
-  // };
-
-    // navigate ends
 
   return (
     <>

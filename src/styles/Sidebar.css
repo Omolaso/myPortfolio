@@ -58,8 +58,6 @@
  
 }
 
-
-
 /* FOR HAMBURGER */
 
 
@@ -71,8 +69,13 @@
     transform: translateY(-7px);
 }
 
+#resume-btn{
+    transition: 0.5s;
+}
+
 #resume-btn:hover{
-    box-shadow: 1px 1px 5px #48B8A5;
+    /* box-shadow: 1px 1px 5px #48B8A5; */
+    transform: scale(1.05);
 }
 
 #archive-card{

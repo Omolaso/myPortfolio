@@ -14,7 +14,7 @@ function Div({ children }) {
         style={{
           transform: isInView ? "none" : "translateX(0px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
         {children}
@@ -39,10 +39,10 @@ const Contact = () => {
 
             <main className='text-center'>
               <h2 className='text-5xl md:text-7xl mt-6 font-bold text-lightGrey'>Get In Touch</h2>
-              <a href="mailto:adextee001@gmail.com" id="resume-btn"
-                className='border border-lightGreen py-4 px-5 font-medium rounded-md text-lightGreen'
-              >
-                <button className='mt-20'> Say Hello </button>
+              <a href="mailto:adextee001@gmail.com">
+                <button
+                  className='border border-lightGreen py-4 px-5 font-medium rounded-md text-lightGreen mt-16'
+                  id="resume-btn"> Say Hello </button>
               </a>
             </main>
 
