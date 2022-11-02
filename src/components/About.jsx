@@ -26,7 +26,7 @@ function Div({ children }) {
 
 const About = () => {
   return (
-    <Div id='about' className='pt-20'>
+    <Div id='#about' className='pt-20'>
         <h1 className='text-3xl text-lightGrey font-bold mb-2'><span className='text-lightGreen text-xl mr-2'>01.</span>About Me</h1>
 
         <main className='flex lg:flex-row flex-col items-center justify-between'>
