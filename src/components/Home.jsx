@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Home.css';
 // import { handleHamburgerToggle } from '../redux-slice/HamburgerSlice';
 // import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';

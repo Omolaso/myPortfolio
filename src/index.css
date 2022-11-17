@@ -21,3 +21,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* STYLES FOR ARCHIVE */
+#archive-card:hover{
+  transform: translateY(-7px);
+}
+
+#resume-btn{
+  transition: 0.5s;
+}
+
+#resume-btn:hover{
+  transform: scale(1.05);
+}
+
+#archive-card{
+  box-shadow: 1px 1px 5px #48B8A5;
+  transition: ease-in-out 0.5s;
+}
+
+/* Home component h3 style */
+#home-h3{
+  word-spacing: 5px;
+}
+
+/* ADDITIONAL STYLE FOR GO UP CHEVRON */
+#go-up{
+  transition: 0.2s;
+}
+
+#go-up:hover{
+  transform: translateY(-2px);
+}

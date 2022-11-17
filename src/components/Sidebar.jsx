@@ -1,15 +1,9 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { removeSideBar } from '../redux-slice/HamburgerSlice';
 import '../styles/Sidebar.css'
 
-
 const SideBar = () => {  
-    
-    const [ sidebar, showSidebar ] = useState(false);
+    const [sidebar, showSidebar] = useState(false);
 
     const handleSidebar = () => {
       showSidebar(!sidebar)  
@@ -27,23 +21,19 @@ const SideBar = () => {
         <>
             <div className="flex items-center justify-between">
               <h1 className="text-lightGrey font-bold text-xl" onClick={() => window.location.reload()}> <Link to='/'> Adextee </Link>  </h1>
-              <div className="block md:hidden">
-                <FontAwesomeIcon icon={ faBars } onClick={handleSidebar} id='bars' className={ sidebar ? 'menuOpen-active' : 'menuOpen'}/>
-                <FontAwesomeIcon icon={ faClose } onClick={removeSidebar} id='bars' className={ sidebar ? 'menuClose-active' : 'menuClose'}/>
+              <div className={sidebar ? "hamburger-div" : "hamburger-div-hover"} onClick={handleSidebar}>
+                <span className="hamburger-span"></span>
+                <span className="hamburger-span"></span>
+                <span  className="hamburger-span"></span>
               </div>
             </div>
 
-            <nav className={sidebar ? 'sidebar-active' : 'sidebar'} onClick={handleSidebar}>
-              {/* <div>
-                <Link to='#'>
-                  <FontAwesomeIcon icon={faClose} className='text-lightGreen text-xl hover:opacity-80'/>
-                </Link>
-              </div> */}
-              <ul className='text-lightGrey text-xl'>
-                <li id="nav-list"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
-                <li id="nav-list"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Projects </a> </li>
-                <li id="nav-list"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
-                <li id="nav-list"> 
+            <nav className={sidebar ? 'sidebar-active' : 'sidebar'} onClick={removeSidebar}>
+              <ul className='text-lightGrey text-xl transition-all'>
+                <li className="mt-3"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
+                <li className="mt-3"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Projects </a> </li>
+                <li className="mt-3"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
+                <li className="mt-3"> 
                   <a href="https://drive.google.com/file/d/1r04q2Ba3BRegQTRqJqfcjXc9sB3kRdTj/view?usp=sharing" target="_blank"
                     rel="noopener noreferrer">
                     <button 

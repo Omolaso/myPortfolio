@@ -1,99 +1,47 @@
 .sidebar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: fixed;
-    top: -100%;    
+    left: -100%;
     transition: 850ms;
-}
-
-.sidebar-active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    top: 0;
-    transition: 1050ms;
-    height: 30vh;
-    width: 100%;
     margin-top: 10px;
 }
 
-#nav-list{
-    margin-bottom: 15px;
+.sidebar-active {
+    left: 0%;
+    transition: 850ms;
 }
 
-
-/* FOR HAMBURGER */
-
-.menuOpen-active{
-    display: none;
-}
-
-.menuOpen{
-    display: block;
-    color:#48B8A5 ;
-    font-size: 30px;
+/*hamburger */
+.hamburger-div-hover{
     cursor: pointer;
 }
 
-.menuOpen:hover{
-    opacity: 0.8;
-}
-
-.menuClose{
+.hamburger-div{
+    cursor: pointer;
     display: none;
 }
 
-.menuClose-active{
+@media screen and (max-width:768px) {
+    .hamburger-div{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.hamburger-span{
     display: block;
-    color:#48B8A5 ;
-    font-size: 30px;
-    transition: 0.5s;
-    cursor: pointer;
+    height: 2px;
+    width: 25px;
+    margin: 5px auto;
+    background-color: #48B8A5;
+    transition: all 0.3s ease-in-out;
 }
 
-.menuClose-active:hover{
-    transform: rotate(90deg);
- 
+.hamburger-div .hamburger-span:nth-child(1){
+    transform: translateY(5px) rotate(45deg);
 }
-
-/* FOR HAMBURGER */
-
-
-
-
-/* ADDITIONAL STYLES FOR ARCHIVE */
-
-#archive-card:hover{
-    transform: translateY(-7px);
+.hamburger-div .hamburger-span:nth-child(2){
+    opacity: 0;
 }
-
-#resume-btn{
-    transition: 0.5s;
+.hamburger-div .hamburger-span:nth-child(3){
+    transform: translateY(-5px) rotate(-45deg);
 }
-
-#resume-btn:hover{
-    /* box-shadow: 1px 1px 5px #48B8A5; */
-    transform: scale(1.05);
-}
-
-#archive-card{
-    box-shadow: 1px 1px 5px #48B8A5;
-    transition: ease-in-out 0.5s;
-}
-
-/* ADDITIONAL STYLES FOR ARCHIVE */
-
-
-
-/* ADDITIONAL STYLE FOR GO UP CHEVRON */
-#go-up{
-    transition: 0.2s;
-}
-
-#go-up:hover{
-    transform: translateY(-2px);
-}
-
-/* ADDITIONAL STYLE FOR GO UP CHEVRON */

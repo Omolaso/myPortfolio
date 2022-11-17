@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Contact.css';
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
