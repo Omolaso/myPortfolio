@@ -25,35 +25,35 @@ const Archive = () => {
 
        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            {/* BRIGHTLY */}
+            {/* HOMELY */}
 
             <Card id='archive-card' sx={{ backgroundColor: '#112240' }}>
                 <CardContent>
 
                     <Typography variant='header'>
-                        <h2 className='text-xl text-lightGrey font-bold text-center'> Brightly Landing Page </h2>
+                        <h2 className='text-xl text-lightGrey font-bold text-center'> Homely </h2>
                     </Typography>
 
                     <Typography variant='div' className='text-lightGrey text-center'>
-                        <p className='mt-2'>A landing page for a learning product for students between the ages of 6 - 10 </p>
+                        <p className='mt-2'>A landing page for a food ordering service. </p>
                     </Typography>
 
                     <Typography variant="div">
                         <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
-                            <span>HTML</span>
+                            <span>ReactJs</span>
+                            <span>Tailwind CSS</span>
                             <span>CSS</span>
-                            <span>JavaScript</span>
                         </section>
                     </Typography>
                 </CardContent>
 
                 <CardActions className='flex items-center justify-center'>
-                    <a href="https://github.com/Omolaso/Bright.git" target='_blank' rel="noopener noreferrer">
+                    <a href="https://github.com/Omolaso/Homely.git" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='GitHub'>
                             <FontAwesomeIcon icon={faGithub} className='text-lg'/>
                         </Button>
                     </a>
-                    <a href="https://omolaso.github.io/Bright/" target='_blank' rel="noopener noreferrer">
+                    <a href="https://homelylandingpage.netlify.app/" target='_blank' rel="noopener noreferrer">
                         <Button size="large" title='External Link'>
                             <FontAwesomeIcon icon={faLink} className='text-lg'/>
                         </Button>
@@ -61,8 +61,8 @@ const Archive = () => {
                         
                 </CardActions>
             </Card>
-
-        {/* JOKE APP */}
+            
+            {/* JOKE APP */}
 
 
             <Card sx={{ backgroundColor: '#112240' }}  id='archive-card'>
@@ -175,7 +175,7 @@ const Archive = () => {
                 </CardActions>
             </Card>
 
-        {/* SCIENTIFIC CALCULATOR */}
+            {/* SCIENTIFIC CALCULATOR */}
 
             <Card sx={{ backgroundColor: '#112240' }} id='archive-card'>
                 <CardContent >
@@ -212,7 +212,7 @@ const Archive = () => {
             </Card>
 
 
-        {/* SPOTIFY */}
+            {/* SPOTIFY */}
 
             <Card sx={{ backgroundColor: '#112240' }} id='archive-card'>
                 <CardContent >
@@ -249,6 +249,45 @@ const Archive = () => {
                     </a>
                 </CardActions>
             </Card>
+
+
+            {/* BRIGHTLY */}
+
+            <Card id='archive-card' sx={{ backgroundColor: '#112240' }}>
+                <CardContent>
+
+                    <Typography variant='header'>
+                        <h2 className='text-xl text-lightGrey font-bold text-center'> Brightly Landing Page </h2>
+                    </Typography>
+
+                    <Typography variant='div' className='text-lightGrey text-center'>
+                        <p className='mt-2'>A landing page for a learning product for students between the ages of 6 - 10 </p>
+                    </Typography>
+
+                    <Typography variant="div">
+                        <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </section>
+                    </Typography>
+                </CardContent>
+
+                <CardActions className='flex items-center justify-center'>
+                    <a href="https://github.com/Omolaso/Bright.git" target='_blank' rel="noopener noreferrer">
+                        <Button size="large" title='GitHub'>
+                            <FontAwesomeIcon icon={faGithub} className='text-lg'/>
+                        </Button>
+                    </a>
+                    <a href="https://omolaso.github.io/Bright/" target='_blank' rel="noopener noreferrer">
+                        <Button size="large" title='External Link'>
+                            <FontAwesomeIcon icon={faLink} className='text-lg'/>
+                        </Button>
+                    </a>
+                        
+                </CardActions>
+            </Card>
+
 
        </div>
 

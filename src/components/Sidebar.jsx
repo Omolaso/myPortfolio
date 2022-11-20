@@ -28,7 +28,7 @@ const SideBar = () => {
               </div>
             </div>
 
-            <nav className={sidebar ? 'sidebar-active' : 'sidebar'} onClick={removeSidebar}>
+            <nav className={sidebar ? 'sidebar-active' : 'side-bar'} onClick={removeSidebar}>
               <ul className='text-lightGrey text-xl transition-all'>
                 <li className="mt-3"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
                 <li className="mt-3"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Projects </a> </li>
