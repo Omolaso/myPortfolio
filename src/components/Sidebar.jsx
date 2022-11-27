@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import '../styles/Sidebar.css'
+import React from "react";
+import '../styles/Sidebar.css';
+import Logo from "../images/logo.png";
 
-const SideBar = () => {  
-    const [sidebar, showSidebar] = useState(false);
+const SideBar = ({sidebar, showSidebar}) => {  
 
     const handleSidebar = () => {
       showSidebar(!sidebar)  
@@ -19,8 +19,10 @@ const SideBar = () => {
   
     return (
         <>
-            <div className="flex items-center justify-between">
-              <h1 className="text-lightGrey font-bold text-xl" onClick={() => window.location.reload()}> <Link to='/'> Adextee </Link>  </h1>
+            <div className="flex items-start justify-between h-[50px]">
+              <Link to='/'>
+                <img src={Logo} alt="logo" className="border-2 border-veryLightGrey rounded-[50%] w-[40px]"/>
+              </Link>
               <div className={sidebar ? "hamburger-div" : "hamburger-div-hover"} onClick={handleSidebar}>
                 <span className="hamburger-span"></span>
                 <span className="hamburger-span"></span>
@@ -29,7 +31,7 @@ const SideBar = () => {
             </div>
 
             <nav className={sidebar ? 'sidebar-active' : 'side-bar'} onClick={removeSidebar}>
-              <ul className='text-lightGrey text-xl transition-all'>
+              <ul className='flex flex-col items-center justify-between h-[50vh] px-8 mb-8 text-lightGrey text-2xl transition-all'>
                 <li className="mt-3"> <a href='#about' className='hover:text-lightGreen hover:transition ease-in-out'> About </a> </li>
                 <li className="mt-3"> <a href='#projects' className='hover:text-lightGreen hover:transition ease-in-out'> Projects </a> </li>
                 <li className="mt-3"> <a href='#contact' className='hover:text-lightGreen hover:transition ease-in-out' > Contact Me</a> </li>
@@ -38,17 +40,13 @@ const SideBar = () => {
                     rel="noopener noreferrer">
                     <button 
                       id="resume-btn"
-                      className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'>
+                      className='border border-lightGreen py-4 px-8 rounded-md text-lightGreen'>
                         Resume 
                    </button>
                   </a>
                 </li>
               </ul>
             </nav>
-
-
-            
-
           </>
     )
 }

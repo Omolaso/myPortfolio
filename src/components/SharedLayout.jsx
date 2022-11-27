@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import '../styles/SharedLayout.css';
 import Navs from './Navs';
 import Home from './Home';
@@ -10,30 +10,32 @@ import Footer from './Footer';
 
 
 const SharedLayout = () => {
+  const [sidebar, showSidebar] = useState(false);
+
+
   return (
     <div className='min-h-screen bg-black pb-8 '>
 
    
-        <section className='px-8 md:px-12'>
-            <Navs/>
+        <section className='py-6 px-8 md:px-12 mb-12'>
+            <Navs sidebar={sidebar} showSidebar={showSidebar}/>
         </section>
 
-        <main className='md:mt-12 px-12'>
+        <main className={sidebar ? 'blur-lg md:mt-[50px] px-12 transition-[all]' : 'md:mt-[50px] px-12'}>
 
-          
-          <section className='mt-20 mb-40'>
-          <Home/>
+          <section className='min-h-screen flex items-start justify-center md:justify-start'>
+            <Home/>
           </section>
 
-          <section className='my-24'>
+          <section className='min-h-screen'>
             <About/>
           </section>
 
-          <section className='my-30'>
+          <section>
             <Projects/>
           </section>
 
-          <section className='my-20'>
+          <section className='mb-12'>
             <Contact/>
           </section>
 

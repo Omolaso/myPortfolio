@@ -7,10 +7,10 @@ function App() {
   return (
     <div>
         <ScrollToTop/>
-      <Routes>
-          <Route path="/" element={<SharedLayout/>}/>
-          <Route path="/archive" element={<Archive/>}/>
-      </Routes>
+        <Routes>
+            <Route path="/" element={<SharedLayout/>}/>
+            <Route path="/archive" element={<Archive/>}/>
+        </Routes>
  
     </div>
   );

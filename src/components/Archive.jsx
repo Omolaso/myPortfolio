@@ -1,7 +1,4 @@
 import * as React from 'react';
-// import { Link } from 'react-router-dom';
-// import  React from 'react';
-// import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -112,7 +109,7 @@ const Archive = () => {
                     </Typography>
 
                     <Typography variant='div' className='text-lightGrey text-center'>
-                        <p> An application form for a POS product where data inputs in the form are stored in the local storage of the browser. </p>
+                        <p> A validated application form for a POS product where data inputs in the form are stored in the local storage of the browser. </p>
                     </Typography>
 
                     <Typography variant="div">
@@ -185,13 +182,13 @@ const Archive = () => {
                     </Typography>
 
                     <Typography variant='div' className='text-lightGrey text-center'>
-                        <p> A Calculator with more functionalities. </p>
+                        <p> Calculator with more functionalities. </p>
                     </Typography>
 
                     <Typography variant="div">
                         <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
                             <span>HTML</span>
-                            <span>Tailwind</span>
+                            <span>Tailwind CSS</span>
                             <span>JavaScript</span>
                         </section>
                     </Typography>
@@ -230,7 +227,7 @@ const Archive = () => {
                     <Typography variant="div">
                         <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
                             <span>ReactJs</span>
-                            <span>Tailwind</span>
+                            <span>Tailwind CSS</span>
                             <span>CSS</span>
                         </section>
                     </Typography>

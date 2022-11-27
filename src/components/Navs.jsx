@@ -1,13 +1,8 @@
 import React from 'react';
-// import '../styles/Nav.css'
-import { Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faReact } from '@fortawesome/free-brands-svg-icons';
-// import { handleHamburgerToggle } from '../redux-slice/HamburgerSlice';
-// import { useDispatch } from 'react-redux';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { Link } from 'react-router-dom';
 import SideBar from '../components/Sidebar';
 import { motion } from 'framer-motion';
+import Logo from "../images/logo.png";
 
 // FRAMER MOTION
 
@@ -43,31 +38,27 @@ const headerItem = {
 
 
 
-const Navs = () => {
-  // const dispatch = useDispatch();
-  // function handleHamburger(){
-  //   dispatch(handleHamburgerToggle())
-  // }
-
-
+const Navs = ({sidebar, showSidebar}) => {
 
   return (
-    <div id='home' className='py-4'>
+    <div id='home'>
       <header className='flex items-center justify-between'>
           <motion.div   
             variants={container}
             initial="hidden"
             animate="visible"
-            className="hidden md:block cursor-pointer">
-              <motion.h1 variants={headerItem} className="text-lightGrey font-bold text-xl" onClick={() => window.location.reload()}> <Link to='/'> Adextee </Link>  </motion.h1>
-              {/* <div className="block md:hidden">
-                <FontAwesomeIcon icon={ faBars } id='bars' className='text-lightGreen text-3xl hover:opacity-80'/>
-              </div> */}
+            className="hidden md:block cursor-pointer"
+          >
+            <motion.a href='/' variants={headerItem} className="">
+              <img src={Logo} alt="logo" className="border-2 border-veryLightGrey rounded-[50%] w-[40px]"/>
+            </motion.a>
           </motion.div>
+
+           
 
           
           <div className='block md:hidden w-full'>
-            <SideBar/>
+            <SideBar sidebar={sidebar} showSidebar={showSidebar}/>
           </div>
 
           <motion.ul
