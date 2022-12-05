@@ -1,14 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
 const Footer = () => {
   return (
-    <div className=''>
-      <footer>
+    <main className='flex items-center justify-center relative py-4'>
 
+      <footer className='w-full'>
         <section className='flex w-full max-w-xs mx-auto items-center justify-around'>
           <a href="https://www.github.com/omolaso" target="_blank" rel="noopener noreferrer"> 
             <FontAwesomeIcon icon={faGithub} title='GitHub' className='text-xl text-lightGrey hover:text-lightGreen'/>
@@ -32,19 +32,14 @@ const Footer = () => {
               Built by Tobi Adesanya
             </a>
         </section>
-
-        <section className='absolute left-0 right-3 text-right'>
-          <a href="#home" 
-            // id="resume-btn"
-            title='Up'
-            // className='border-lightGreen rounded-md text-lightGreen border'
-          >
-            <FontAwesomeIcon icon={faChevronUp} id='go-up' className="text-3xl text-lightGreen"/>
-          </a>
-       </section>
-
       </footer>
-    </div>
+      <a href="#home" 
+        title='Up'
+        className='absolute bottom-0 right-0 '
+      >
+        <FontAwesomeIcon icon={faChevronUp} className="go-up text-xl md:text-3xl text-lightGreen"/>
+      </a>
+    </main>
   )
 }
 

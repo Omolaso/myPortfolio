@@ -34,13 +34,12 @@ const Home = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="text-center md:text-left"
       >
-      <motion.h3 variants={item} id='home-h3' className='text-lg text-veryLightGrey font-medium' > Hi, my name is</motion.h3>
-      <motion.h1 variants={item} id='home-h1' className='text-4xl md:text-7xl mt-6 font-bold text-lightGrey'>Tobi Adesanya.</motion.h1>
-      <motion.h2 variants={item} id='home-h2' className='text-4xl md:text-7xl mt-3 font-bold text-deepGrey'> I build things for the web.</motion.h2>
-      <motion.p variants={item} id='home-para1' className='text-lg mt-6 text-deepGrey font-medium'> I am a frontend engineer and I enjoy creating responsive and adequate frontend products. <br /> 
-          Being a critical thinker, I love solving problems. I am passionate about learning and trying out new techs gives me thrills.</motion.p>
+      <motion.h3 variants={item} className='home-h3 text-lg text-veryLightGrey font-medium' > Hi, my name is</motion.h3>
+      <motion.h1 variants={item} className='text-4xl md:text-7xl mt-6 font-bold text-lightGrey'>Tobi Adesanya.</motion.h1>
+      <motion.h2 variants={item} className='text-4xl md:text-7xl mt-3 font-bold text-deepGrey'> I build things for the web.</motion.h2>
+      <motion.p variants={item} className='text-lg mt-6 text-deepGrey font-medium'> I am a frontend engineer and I enjoy creating responsive and adequate frontend products. <br /> 
+          Being a critical thinker, solving problems intrigues me. I am passionate about learning and trying out new techs also gives me thrills.</motion.p>
             {/* <p> I&apos;m not familiar with.</p> */}
 
       <motion.div variants={item} className="mt-4">

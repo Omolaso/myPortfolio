@@ -40,19 +40,21 @@ function Div({ children }) {
 
 const Projects = () => {
   return (
-    <div id='projects' className='py-20'>
+    <>
 
-     <header>
-        <h1 className='text-3xl text-lightGrey font-bold mb-2'> <span className='text-lightGreen text-xl mr-2'>02.</span> Some things I&apos;ve built</h1>
-     </header>
+      <main className='flex flex-col gap-y-8'>
+
+        <header>
+            <h1 className='text-3xl text-lightGrey font-bold'> <span className='text-lightGreen text-xl mr-2'>02.</span> My Projects</h1>
+        </header>
 
         {/* Project Container Div*/}
-        <div className='text-deepGrey text-lg mt-4 font-medium'>
+        <div className=' flex flex-col items-center justify-center text-deepGrey text-lg gap-y-12 font-medium'>
 
           {/* ZEROHUNGER */}
           <Div>
             <Card 
-              className='w-full mx-auto max-w-4xl mt-10 mb-24' 
+              className='w-full mx-auto max-w-4xl' 
               >
               <CardMedia
                 component="img"
@@ -99,7 +101,7 @@ const Projects = () => {
           {/* QR CODE GENERATOR */}
 
           <Div>
-            <Card className='w-full mx-auto max-w-4xl mt-10 mb-24'>
+            <Card className='w-full mx-auto max-w-4xl'>
               <CardMedia
                 component="img"
                 height="100"
@@ -143,7 +145,7 @@ const Projects = () => {
           {/* NETFLIX */}
 
           <Div>
-            <Card className='w-full mx-auto max-w-4xl mt-10 mb-24'>
+            <Card className='w-full mx-auto max-w-4xl'>
                 <CardMedia
                   component="img"
                   height="100"
@@ -160,7 +162,7 @@ const Projects = () => {
                     <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
                       <span>React</span>
                       <span>CSS</span>
-                      <span>Tailwind</span>
+                      <span>Tailwind CSS</span>
                       <span>MovieDB API</span>
                     </div>
                   </Typography>
@@ -191,7 +193,7 @@ const Projects = () => {
           {/* TODO-LIST */}
 
           <Div>
-            <Card className='w-full mx-auto max-w-4xl mt-10 mb-24'>
+            <Card className='w-full mx-auto max-w-4xl'>
               <CardMedia
                 component="img"
                 height="100"
@@ -233,20 +235,21 @@ const Projects = () => {
           </Div>
 
               {/* More Project Button */}
-        <Div>
-          <div className="text-center">
-              <Link to='/archive'> 
-                <button 
-                  className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'
-                  id="resume-btn"
-                >
-                  View other projects
-                </button>
-              </Link>
-            </div>
-        </Div>
+          <Div>
+            <div className="text-center">
+                <Link to='/archive'> 
+                  <button 
+                    className='border border-lightGreen py-2 px-3 rounded-md text-lightGreen'
+                    id="resume-btn"
+                  >
+                    View other projects
+                  </button>
+                </Link>
+              </div>
+          </Div>
         </div>
-    </div>
+      </main>
+    </>
   )
 }
 

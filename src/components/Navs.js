@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import SideBar from '../components/Sidebar';
+import SideBar from './Sidebar';
 import { motion } from 'framer-motion';
 import Logo from "../images/logo.png";
 
@@ -41,8 +41,8 @@ const headerItem = {
 const Navs = ({sidebar, showSidebar}) => {
 
   return (
-    <div id='home'>
-      <header className='flex items-center justify-between'>
+    <main className='w-full'>
+      <header className='flex items-center justify-between w-full'>
           <motion.div   
             variants={container}
             initial="hidden"
@@ -83,7 +83,7 @@ const Navs = ({sidebar, showSidebar}) => {
               </motion.li>
           </motion.ul>
       </header>
-    </div>
+    </main>
   )
 }
 
