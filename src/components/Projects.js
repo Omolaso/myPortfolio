@@ -49,7 +49,7 @@ const Projects = () => {
         </header>
 
         {/* Project Container Div*/}
-        <div className=' flex flex-col items-center justify-center text-deepGrey text-lg gap-y-12 font-medium'>
+        <div className='flex flex-col items-center justify-center text-deepGrey text-lg gap-y-12 font-medium'>
 
           {/* ZEROHUNGER */}
           <Div>

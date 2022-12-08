@@ -39,7 +39,7 @@ const SharedLayout = () => {
             <About/>
           </div>
 
-          <div id='projects' className='pt-10 flex items-center justify-start min-h-screen'>
+          <div id='projects' className='pt-10 min-h-screen'>
             <Projects/>
           </div>
 
