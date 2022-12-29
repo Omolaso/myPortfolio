@@ -1,6 +1,6 @@
-import Archive from "./components/Archive";
+import { Routes, Route } from 'react-router-dom';
 import LandingPage from "./components/LandingPage";
-import {Routes, Route} from 'react-router-dom';
+import Archive from "./components/Archive";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
