@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import QR from "../images/QR.png";
 import Todo from "../images/todo.png";
-import Netflix from "../images/netflix.png";
+import Squazzle from "../images/squazzle.png";
 import Artsy from "../images/artsy.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -68,13 +68,13 @@ const Projects = () => {
 
                 <Typography variant="div" color="text.secondary">
                   <p className="text-lightGreen text-center">
-                    A website to shop photographic artifacts and other amazing
-                    photographic works.
+                    A website to auction photographs and other amazing artworks.
                   </p>
                   <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
                     <span>ReactJs</span>
                     <span>TailwindCSS</span>
                     <span>Random JPEGs</span>
+                    <span>JSON Server</span>
                   </div>
                 </Typography>
               </CardContent>
@@ -103,8 +103,63 @@ const Projects = () => {
             </Card>
           </Div>
 
-          {/* QR CODE GENERATOR */}
+          {/* SQUAZZLE */}
 
+          <Div>
+            <Card className="w-full mx-auto max-w-4xl">
+              <CardMedia
+                component="img"
+                height="100"
+                image={Squazzle}
+                alt="Squazzle"
+              />
+              <CardContent className="bg-black">
+                <Typography variant="header" component="div">
+                  <h2 className="text-xl text-lightGrey font-bold text-center">
+                    Squazzle
+                    <span className="text-lightGreen text-xs font-medium ml-2">
+                      &#40;Featured Project&#41;
+                    </span>
+                  </h2>
+                </Typography>
+
+                <Typography variant="div" color="text.secondary">
+                  <p className="text-lightGreen text-center">
+                    A platform that allows users to list accommodations to-let.
+                  </p>
+                  <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
+                    <span>ReactJs</span>
+                    <span>Tailwind CSS</span>
+                    <span>Firebase</span>
+                  </div>
+                </Typography>
+              </CardContent>
+
+              <CardActions className="flex items-center justify-center bg-black">
+                <a
+                  href="https://github.com/StuternHousemanship/SQUAZZLE-Frontend-Project-Team1.1/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="large" title="GitHub">
+                    <FontAwesomeIcon icon={faGithub} className="text-lg" />
+                  </Button>
+                </a>
+
+                <a
+                  href="https://squazzle-stutern.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="large" title="External Link">
+                    <FontAwesomeIcon icon={faLink} className="text-lg" />
+                  </Button>
+                </a>
+              </CardActions>
+            </Card>
+          </Div>
+
+          {/* QR CODE GENERATOR */}
           <Div>
             <Card className="w-full mx-auto max-w-4xl">
               <CardMedia
@@ -127,7 +182,7 @@ const Projects = () => {
                   </p>
                   <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
                     <span>HTML</span>
-                    <span>Tailwind</span>
+                    <span>TailwindCSS</span>
                     <span>JavaScript</span>
                   </div>
                 </Typography>
@@ -157,65 +212,7 @@ const Projects = () => {
             </Card>
           </Div>
 
-          {/* NETFLIX */}
-
-          <Div>
-            <Card className="w-full mx-auto max-w-4xl">
-              <CardMedia
-                component="img"
-                height="100"
-                image={Netflix}
-                alt="Netflix"
-              />
-              <CardContent className="bg-black">
-                <Typography variant="header" component="div">
-                  <h2 className="text-xl text-lightGrey font-bold text-center">
-                    Netflix
-                    <span className="text-lightGreen text-xs font-medium ml-2">
-                      &#40;Featured Project&#41;
-                    </span>
-                  </h2>
-                </Typography>
-
-                <Typography variant="div" color="text.secondary">
-                  <p className="text-lightGreen text-center">
-                    A movie streaming platform clone.
-                  </p>
-                  <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
-                    <span>React</span>
-                    <span>CSS</span>
-                    <span>Tailwind CSS</span>
-                    <span>MovieDB API</span>
-                  </div>
-                </Typography>
-              </CardContent>
-
-              <CardActions className="flex items-center justify-center bg-black">
-                <a
-                  href="https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="large" title="GitHub">
-                    <FontAwesomeIcon icon={faGithub} className="text-lg" />
-                  </Button>
-                </a>
-
-                <a
-                  href="https://netflix-duplicate.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="large" title="External Link">
-                    <FontAwesomeIcon icon={faLink} className="text-lg" />
-                  </Button>
-                </a>
-              </CardActions>
-            </Card>
-          </Div>
-
           {/* TODO-LIST */}
-
           <Div>
             <Card className="w-full mx-auto max-w-4xl">
               <CardMedia

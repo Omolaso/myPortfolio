@@ -28,14 +28,13 @@ const Archive = () => {
           <CardContent>
             <Typography variant="header">
               <h2 className="text-xl text-lightGrey font-bold text-center">
-                {" "}
-                Homely{" "}
+                Homely
               </h2>
             </Typography>
 
             <Typography variant="div" className="text-lightGrey text-center">
               <p className="mt-2">
-                A landing page for a food ordering service.{" "}
+                A landing page for a food ordering service.
               </p>
             </Typography>
 
@@ -76,8 +75,7 @@ const Archive = () => {
           <CardContent>
             <Typography variant="header" className="text-lightGrey">
               <h2 className="text-xl text-lightGrey font-bold text-center py-2">
-                {" "}
-                Joke App{" "}
+                Joke App
               </h2>
             </Typography>
 
@@ -87,7 +85,7 @@ const Archive = () => {
 
             <Typography variant="div">
               <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
-                <span>React</span>
+                <span>ReactJs</span>
                 <span>CSS</span>
                 <span>Chuck Norris Joke API</span>
               </section>
@@ -208,14 +206,62 @@ const Archive = () => {
           </CardActions>
         </Card>
 
+        {/* NETFLIX */}
+
+        <Card sx={{ backgroundColor: "#112240" }} id="archive-card">
+          <CardContent>
+            <Typography variant="header" className="text-lightGrey">
+              <h2 className="text-xl text-lightGrey font-bold text-center">
+                Netflix
+                <span className="text-lightGreen text-xs font-medium ml-1">
+                  &#40;Featured Project&#41;
+                </span>
+              </h2>
+            </Typography>
+
+            <Typography variant="div" className="text-lightGrey text-center">
+              <p> A movie streaming platform clone. </p>
+            </Typography>
+
+            <Typography variant="div">
+              <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
+                <span>ReactJs</span>
+                <span>CSS</span>
+                <span>Tailwind CSS</span>
+                <span>MovieDB API</span>
+              </section>
+            </Typography>
+          </CardContent>
+
+          <CardActions className="flex items-center justify-center">
+            <a
+              href="https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="large" title="GitHub">
+                <FontAwesomeIcon icon={faGithub} className="text-lg" />
+              </Button>
+            </a>
+            <a
+              href="https://netflix-duplicate.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="large" title="External Link">
+                <FontAwesomeIcon icon={faLink} className="text-lg" />
+              </Button>
+            </a>
+          </CardActions>
+        </Card>
+
         {/* BASIC CALCULATOR */}
 
         <Card sx={{ backgroundColor: "#112240" }} id="archive-card">
           <CardContent>
             <Typography variant="header" className="text-lightGrey">
               <h2 className="text-xl text-lightGrey font-bold text-center">
-                {" "}
-                Calculator{" "}
+                Calculator
               </h2>
             </Typography>
 
@@ -260,8 +306,7 @@ const Archive = () => {
           <CardContent>
             <Typography variant="header" className="text-lightGrey">
               <h2 className="text-xl text-lightGrey font-bold text-center">
-                {" "}
-                Scientific Calculator{" "}
+                Scientific Calculator
               </h2>
             </Typography>
 
@@ -306,8 +351,8 @@ const Archive = () => {
           <CardContent>
             <Typography variant="header" className="text-lightGrey">
               <h2 className="text-xl text-lightGrey font-bold text-center">
-                Spotify{" "}
-                <span className="text-lightGreen text-xs font-medium">
+                Spotify
+                <span className="text-lightGreen text-xs font-medium ml-1">
                   &#40;coming soon&#41;
                 </span>
               </h2>
@@ -354,15 +399,14 @@ const Archive = () => {
           <CardContent>
             <Typography variant="header">
               <h2 className="text-xl text-lightGrey font-bold text-center">
-                {" "}
-                Brightly Landing Page{" "}
+                Brightly Landing Page
               </h2>
             </Typography>
 
             <Typography variant="div" className="text-lightGrey text-center">
               <p className="mt-2">
                 A landing page for a learning product for students between the
-                ages of 6 - 10{" "}
+                ages of 6 - 10
               </p>
             </Typography>
 
