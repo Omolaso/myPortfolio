@@ -70,10 +70,10 @@ const Projects = () => {
                   <p className="text-lightGreen text-center">
                     A website to auction photographs and other amazing artworks.
                   </p>
-                  <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
+                  <div className="flex items-center justify-between mx-auto text-lightGrey text-[10px] sm:text-xs w-full max-w-md mt-3">
                     <span>ReactJs</span>
                     <span>TailwindCSS</span>
-                    <span>Random JPEGs</span>
+                    <span>RandomJPEGs</span>
                     <span>JSON Server</span>
                   </div>
                 </Typography>
