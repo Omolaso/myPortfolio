@@ -345,35 +345,36 @@ const Archive = () => {
           </CardActions>
         </Card>
 
-        {/* SPOTIFY */}
+        {/* TODO LIST */}
 
         <Card sx={{ backgroundColor: "#112240" }} id="archive-card">
           <CardContent>
             <Typography variant="header" className="text-lightGrey">
               <h2 className="text-xl text-lightGrey font-bold text-center">
-                Spotify
-                <span className="text-lightGreen text-xs font-medium ml-1">
-                  &#40;coming soon&#41;
-                </span>
+                Todo-List App
               </h2>
             </Typography>
 
             <Typography variant="div" className="text-lightGrey text-center">
-              <p> A music streaming platform clone. </p>
+              <p>
+                Todo-list App for keeping record of daily todos. It has a light
+                and dark mode toggler for the user<span>&#39;</span>s
+                preference.
+              </p>
             </Typography>
 
             <Typography variant="div">
               <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
-                <span>ReactJs</span>
-                <span>Tailwind CSS</span>
+                <span>HTML</span>
                 <span>CSS</span>
+                <span>JavaScript</span>
               </section>
             </Typography>
           </CardContent>
 
           <CardActions className="flex items-center justify-center">
             <a
-              href="https://github.com/Omolaso/spotify"
+              href="https://github.com/omolaso/toDo/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -382,7 +383,7 @@ const Archive = () => {
               </Button>
             </a>
             <a
-              href="https://spotifyduplicate.netlify.app"
+              href="https://omolaso.github.io/toDo/"
               target="_blank"
               rel="noopener noreferrer"
             >

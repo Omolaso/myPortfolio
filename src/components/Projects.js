@@ -8,7 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import QR from "../images/QR.png";
-import Todo from "../images/todo.png";
+import movieHub from "../images/movieHub.png";
 import Squazzle from "../images/squazzle.png";
 import Artsy from "../images/artsy.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -159,6 +159,59 @@ const Projects = () => {
             </Card>
           </Div>
 
+          {/* MOVIE HUB */}
+          <Div>
+            <Card className="w-full mx-auto max-w-4xl">
+              <CardMedia
+                component="img"
+                height="100"
+                image={movieHub}
+                alt="MovieHub"
+              />
+              <CardContent className="bg-black">
+                <Typography variant="header" component="div">
+                  <h2 className="text-xl text-lightGrey font-bold text-center">
+                    MovieHub
+                  </h2>
+                </Typography>
+
+                <Typography variant="div" color="text.secondary">
+                  <p className="text-lightGreen text-center">
+                    A webapp that grants access to view details and watch
+                    trailers of above 1000 movies.
+                  </p>
+                  <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
+                    <span>ReactJs</span>
+                    <span>TailwindCSS</span>
+                    <span>IMDB Movie API</span>
+                  </div>
+                </Typography>
+              </CardContent>
+
+              <CardActions className="flex items-center justify-center bg-black">
+                <a
+                  href="https://github.com/Omolaso/movieApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="large" title="GitHub">
+                    <FontAwesomeIcon icon={faGithub} className="text-lg" />
+                  </Button>
+                </a>
+
+                <a
+                  href="https://moviehub11.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="large" title="External Link">
+                    <FontAwesomeIcon icon={faLink} className="text-lg" />
+                  </Button>
+                </a>
+              </CardActions>
+            </Card>
+          </Div>
+
           {/* QR CODE GENERATOR */}
           <Div>
             <Card className="w-full mx-auto max-w-4xl">
@@ -166,12 +219,12 @@ const Projects = () => {
                 component="img"
                 height="100"
                 image={QR}
-                alt="Brightly"
+                alt="QR Code generator"
               />
               <CardContent className="bg-black">
                 <Typography variant="header" component="div">
                   <h2 className="text-xl text-lightGrey font-bold text-center">
-                    QR Code Generator
+                    QR Code generator
                   </h2>
                 </Typography>
 
@@ -182,7 +235,7 @@ const Projects = () => {
                   </p>
                   <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
                     <span>HTML</span>
-                    <span>TailwindCSS</span>
+                    <span>Tailwind CSS</span>
                     <span>JavaScript</span>
                   </div>
                 </Typography>
@@ -201,60 +254,6 @@ const Projects = () => {
 
                 <a
                   href="https://omolaso.github.io/QR-Code-Generator/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="large" title="External Link">
-                    <FontAwesomeIcon icon={faLink} className="text-lg" />
-                  </Button>
-                </a>
-              </CardActions>
-            </Card>
-          </Div>
-
-          {/* TODO-LIST */}
-          <Div>
-            <Card className="w-full mx-auto max-w-4xl">
-              <CardMedia
-                component="img"
-                height="100"
-                image={Todo}
-                alt="TodoList App"
-              />
-              <CardContent className="bg-black">
-                <Typography variant="header" component="div">
-                  <h2 className="text-xl text-lightGrey font-bold text-center">
-                    Todo-List App
-                  </h2>
-                </Typography>
-
-                <Typography variant="div" color="text.secondary">
-                  <p className="text-lightGreen text-center">
-                    Todo-list App for keeping record of daily todos. It has a
-                    light and dark mode toggler for the user<span>&#39;</span>s
-                    preference.
-                  </p>
-                  <div className="flex items-center justify-around mx-auto text-lightGrey text-xs w-full max-w-xs mt-3">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                  </div>
-                </Typography>
-              </CardContent>
-
-              <CardActions className="flex items-center justify-center bg-black">
-                <a
-                  href="https://github.com/omolaso/toDo/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="large" title="GitHub">
-                    <FontAwesomeIcon icon={faGithub} className="text-lg" />
-                  </Button>
-                </a>
-
-                <a
-                  href="https://omolaso.github.io/toDo/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
