@@ -32,7 +32,6 @@ const Home = () => {
         variants={item}
         className="home-h3 text-lg text-veryLightGrey font-medium"
       >
-        {" "}
         Hi, my name is
       </motion.h3>
       <motion.h1
@@ -45,14 +44,12 @@ const Home = () => {
         variants={item}
         className="text-4xl md:text-7xl mt-3 font-bold text-deepGrey"
       >
-        {" "}
         I build things for the web.
       </motion.h2>
       <motion.p
         variants={item}
         className="text-lg mt-6 text-deepGrey font-medium"
       >
-        {" "}
         I am a frontend engineer and I enjoy creating responsive and adequate
         frontend products. <br />
         Being a critical thinker, solving problems intrigues me. I am passionate

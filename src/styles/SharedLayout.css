@@ -21,3 +21,14 @@
 /* ::-webkit-scrollbar-thumb:hover {
     width: 20px;
 } */
+
+.scroll-up{
+    animation: scroll 1.5s ease infinite;
+    transform: translateY(0%);
+}
+
+@keyframes scroll {
+    to{
+        transform: translateY(-50%);
+    }
+}

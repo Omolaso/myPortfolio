@@ -5,7 +5,6 @@ import {
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -61,16 +60,6 @@ const Footer = () => {
           </a>
         </section>
       </footer>
-      <a
-        href="#home"
-        title="Up"
-        className="absolute bottom-4 right-0 md:right-4 "
-      >
-        <FontAwesomeIcon
-          icon={faChevronUp}
-          className="go-up text-lg md:text-3xl text-lightGreen border border-lightGreen rounded-full p-1 md:p-4"
-        />
-      </a>
     </main>
   );
 };

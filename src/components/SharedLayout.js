@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/SharedLayout.css";
 import Navs from "./Navs";
 import Home from "./Home";
@@ -6,9 +6,30 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const SharedLayout = () => {
   const [sidebar, showSidebar] = useState(false);
+  const [scrollUpBtn, setScrollUpBtn] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.documentElement.scrollTop > 50 ||
+        document.body.scrollTop > 50
+      ) {
+        setScrollUpBtn(true);
+      } else {
+        setScrollUpBtn(false);
+      }
+    });
+  }, [scrollUpBtn]);
+
+  function scrollBackUp() {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
 
   return (
     <main className="flex flex-col gap-y-6 md:gap-y-8 min-h-screen bg-black relative">
@@ -54,6 +75,26 @@ const SharedLayout = () => {
       <section className="w-full absolute bottom-0 px-2">
         <Footer />
       </section>
+
+      <div
+        className={
+          scrollUpBtn
+            ? "fixed right-4 top-[85%] duration-300 ease-in-out z-50"
+            : "fixed right-[-100%] top-[85%] duration-300 ease-in-out"
+        }
+      >
+        <button
+          title="Back Up"
+          type="button"
+          onClick={() => scrollBackUp()}
+          className="p-4 md:p-4 rounded-full focus:outline-0 bg-black"
+        >
+          <FontAwesomeIcon
+            icon={faChevronUp}
+            className="scroll-up text-[20px] md:text-[32px] text-deepGrey"
+          />
+        </button>
+      </div>
     </main>
   );
 };
