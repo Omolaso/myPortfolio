@@ -1,20 +1,20 @@
 /* Width */
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0A192F; 
+  background: #0a192f;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #8892B0; 
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+  background: #8892b0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 /* Handle on hover */
@@ -22,13 +22,13 @@
     width: 20px;
 } */
 
-.scroll-up{
-    animation: scroll 1.5s ease infinite;
-    transform: translateY(0%);
+.scroll-up {
+  animation: scroll 2s ease infinite;
+  transform: translateY(50%);
 }
 
 @keyframes scroll {
-    to{
-        transform: translateY(-50%);
-    }
+  to {
+    transform: translateY(-20%);
+  }
 }

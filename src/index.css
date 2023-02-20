@@ -9,8 +9,8 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,38 +18,29 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* STYLES FOR ARCHIVE */
-#archive-card:hover{
+#archive-card:hover {
   transform: translateY(-7px);
 }
 
-#resume-btn{
+#resume-btn {
   transition: 0.5s;
 }
 
-#resume-btn:hover{
+#resume-btn:hover {
   transform: scale(1.05);
 }
 
-#archive-card{
-  box-shadow: 1px 1px 5px #48B8A5;
+#archive-card {
+  box-shadow: 1px 1px 5px #48b8a5;
   transition: ease-in-out 0.5s;
 }
 
 /* Home component h3 style */
-.home-h3{
+.home-h3 {
   word-spacing: 5px;
-}
-
-/* ADDITIONAL STYLE FOR GO UP CHEVRON */
-.go-up{
-  transition: 0.2s;
-}
-
-.go-up:hover{
-  transform: translateY(-2px);
 }
