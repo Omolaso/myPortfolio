@@ -68,7 +68,7 @@ const SideBar = ({ sidebar, showSidebar }) => {
           </li>
           <li className="mt-3">
             <a
-              href="https://drive.google.com/file/d/1JFbkLjn9KaBiIV0XyG-i93x-eMawDYI7/view?usp=share_link"
+              href="https://drive.google.com/file/d/1_huADRXvY8yR1UcFOant-7zLiNkFco52/view?usp=share_link"
               target="_blank"
               rel="noopener noreferrer"
             >
