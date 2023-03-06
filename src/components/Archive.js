@@ -22,6 +22,55 @@ const Archive = () => {
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* WEB DICO */}
+
+        <Card id="archive-card" sx={{ backgroundColor: "#112240" }}>
+          <CardContent>
+            <Typography variant="header">
+              <h2 className="text-xl text-lightGrey font-bold text-center">
+                WEB DICO
+              </h2>
+            </Typography>
+
+            <Typography variant="div" className="text-lightGrey text-center">
+              <p className="mt-2">
+                A fancy dictionary where you are required to create an account
+                to gain access.
+              </p>
+            </Typography>
+
+            <Typography variant="div">
+              <section className="flex flex-wrap items-center justify-around mx-auto text-lightGreen text-[5px] sm:text-xs font-medium w-full max-w-xs mt-3">
+                <span>ReactJs</span>
+                <span>Tailwind CSS</span>
+                <span>Firebase</span>
+                <span>Dictionary API</span>
+              </section>
+            </Typography>
+          </CardContent>
+
+          <CardActions className="flex items-center justify-center">
+            <a
+              href="https://github.com/Omolaso/webDictionary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="large" title="GitHub">
+                <FontAwesomeIcon icon={faGithub} className="text-lg" />
+              </Button>
+            </a>
+            <a
+              href="https://webdictionary-auth.firebaseapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="large" title="External Link">
+                <FontAwesomeIcon icon={faLink} className="text-lg" />
+              </Button>
+            </a>
+          </CardActions>
+        </Card>
+
         {/* HOMELY */}
 
         <Card id="archive-card" sx={{ backgroundColor: "#112240" }}>
@@ -84,7 +133,7 @@ const Archive = () => {
             </Typography>
 
             <Typography variant="div">
-              <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
+              <section className="flex flex-wrap items-center justify-around mx-auto text-lightGreen gap-1 text-xs font-medium w-full max-w-xs mt-3">
                 <span>ReactJs</span>
                 <span>CSS</span>
                 <span>Chuck Norris Joke API</span>
@@ -224,7 +273,7 @@ const Archive = () => {
             </Typography>
 
             <Typography variant="div">
-              <section className="flex items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
+              <section className="flex flex-wrap gap-1 items-center justify-around mx-auto text-lightGreen text-xs font-medium w-full max-w-xs mt-3">
                 <span>ReactJs</span>
                 <span>CSS</span>
                 <span>Tailwind CSS</span>
