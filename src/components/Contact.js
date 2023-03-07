@@ -35,6 +35,7 @@ const Contact = () => {
         <h2 className="text-5xl md:text-7xl mt-6 font-bold text-lightGrey">
           Get In Touch
         </h2>
+
         <a href="mailto:tobifrancisadesanya@gmail.com">
           <button
             className="border border-lightGreen py-4 px-5 font-medium rounded-md text-lightGreen mt-16"
