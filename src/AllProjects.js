@@ -1,6 +1,7 @@
 import artsy from "./images/artsy.png";
 import squazzle from "./images/squazzle.png";
 import movieHub from "./images/movieHub.png";
+import space from "./images/space.jpg";
 import QR from "./images/QR.png";
 
 export const landingPageProjects = [
@@ -24,13 +25,12 @@ export const landingPageProjects = [
     featured: true,
   },
   {
-    name: "MovieHub",
-    description:
-      "A webapp that grants access to view details and watch trailers of more than 1000 movies.",
-    techUsed: ["ReactJs", "TailwindCSS", "IMDB Movie API"],
-    imgURL: `${movieHub}`,
-    repoURL: "https://github.com/Omolaso/movieApp",
-    hostedURL: "https://moviehub11.netlify.app/",
+    name: "Space Tourism",
+    description: "A space tourism website.",
+    techUsed: ["ReactJS", "TailwindCSS", "SpaceJPEGs"],
+    imgURL: `${space}`,
+    repoURL: "https://github.com/Omolaso/spaceTourism",
+    hostedURL: "https://spacetourplace.netlify.app",
     featured: false,
   },
   {
@@ -53,6 +53,16 @@ export const archiveProjects = [
     techUsed: ["ReactJS", "TailwindCSS", "Firebase", "Dictionary API"],
     repoURL: "https://github.com/Omolaso/webDictionary",
     hostedURL: "https://webdictionary-auth.firebaseapp.com/",
+    featured: false,
+  },
+  {
+    name: "MovieHub",
+    description:
+      "A webapp that grants access to view details and watch trailers of more than 1000 movies.",
+    techUsed: ["ReactJs", "TailwindCSS", "IMDB Movie API"],
+    imgURL: `${movieHub}`,
+    repoURL: "https://github.com/Omolaso/movieApp",
+    hostedURL: "https://moviehub11.netlify.app/",
     featured: false,
   },
   {
