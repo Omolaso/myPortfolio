@@ -25,12 +25,13 @@ export const landingPageProjects = [
     featured: true,
   },
   {
-    name: "Space Tourism",
-    description: "A space tourism website.",
-    techUsed: ["ReactJS", "TailwindCSS", "SpaceJPEGs"],
-    imgURL: `${space}`,
-    repoURL: "https://github.com/Omolaso/spaceTourism",
-    hostedURL: "https://spacetourplace.netlify.app",
+    name: "MovieHub",
+    description:
+      "A webapp that grants access to view details and watch trailers of more than 1000 movies.",
+    techUsed: ["ReactJs", "TailwindCSS", "IMDB Movie API"],
+    imgURL: `${movieHub}`,
+    repoURL: "https://github.com/Omolaso/movieApp",
+    hostedURL: "https://moviehub11.netlify.app/",
     featured: false,
   },
   {
@@ -56,13 +57,12 @@ export const archiveProjects = [
     featured: false,
   },
   {
-    name: "MovieHub",
-    description:
-      "A webapp that grants access to view details and watch trailers of more than 1000 movies.",
-    techUsed: ["ReactJs", "TailwindCSS", "IMDB Movie API"],
-    imgURL: `${movieHub}`,
-    repoURL: "https://github.com/Omolaso/movieApp",
-    hostedURL: "https://moviehub11.netlify.app/",
+    name: "Space Tourism",
+    description: "A space tourism website.",
+    techUsed: ["ReactJS", "TailwindCSS", "SpaceJPEGs"],
+    imgURL: `${space}`,
+    repoURL: "https://github.com/Omolaso/spaceTourism",
+    hostedURL: "https://spacetourplace.netlify.app",
     featured: false,
   },
   {
