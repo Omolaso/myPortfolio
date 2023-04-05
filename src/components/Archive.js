@@ -7,9 +7,11 @@ import Typography from "@mui/material/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { archiveProjects } from "../AllProjects";
+import { data } from "../AllProjects";
 
 const Archive = () => {
+  const { archiveProjects } = data;
+
   const back = () => {
     window.history.back();
   };

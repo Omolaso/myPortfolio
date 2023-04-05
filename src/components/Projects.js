@@ -12,7 +12,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { landingPageProjects } from "../AllProjects";
+import { data } from "../AllProjects";
 
 function Div({ children }) {
   const ref = useRef(null);
@@ -34,6 +34,8 @@ function Div({ children }) {
 }
 
 const Projects = () => {
+  const { landingPageProjects } = data;
+
   return (
     <main className="flex flex-col gap-y-8">
       <header>
