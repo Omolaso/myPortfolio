@@ -64,7 +64,7 @@ export const data = {
       name: "Sunnyside Landing Page",
       description:
         "A basic landing page for a brand that assists startups in achieving their aims.",
-      techUsed: ["NextJS", "TailwindCSS", "Framer Motion"],
+      techUsed: ["NextJS", "TailwindCSS"],
       imgURL: `${sunnySide}`,
       repoURL: "https://github.com/Omolaso/sunnySide",
       hostedURL: "https://sunnyside-agency-gamma.vercel.app/",
