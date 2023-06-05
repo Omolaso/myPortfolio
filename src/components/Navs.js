@@ -65,7 +65,6 @@ const Navs = ({ sidebar, showSidebar }) => {
           animate="visible"
           className="hidden md:flex items-center justify-between flex-auto max-w-lg text-lightGrey text-sm font-medium"
         >
-          {/* <li> <a href='#home' className='hover:text-lightGreen hover:transition ease-in-out'> Home </a> </li> */}
           <motion.li variants={item}>
             <a
               href="#about"
@@ -92,7 +91,7 @@ const Navs = ({ sidebar, showSidebar }) => {
           </motion.li>
           <motion.li variants={item}>
             <a
-              href="https://drive.google.com/file/d/1_huADRXvY8yR1UcFOant-7zLiNkFco52/view?usp=share_link"
+              href="https://drive.google.com/file/d/10bXG81gSHzPvjyPLYQMgspDTHrKMGLo_/view"
               target="_blank"
               rel="noopener noreferrer"
             >
