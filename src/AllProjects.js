@@ -31,9 +31,14 @@ export const data = {
 		},
 		{
 			name: "Get Linked",
-			description:
-				"A getLinked Hackathon Project",
-			techUsed: ["NextJS", "TailwindCSS", "getLinked API", "Framer Motion"],
+			description: "A getLinked Hackathon Project",
+			techUsed: [
+				"NextJs",
+				"TypeScript",
+				"TailwindCSS",
+				"getLinked API",
+				"Framer Motion",
+			],
 			imgURL: `${getLinked}`,
 			repoURL: "https://github.com/Omolaso/getLinked",
 			hostedURL: "https://get-linked-zeta.vercel.app/",
@@ -167,5 +172,13 @@ export const data = {
 		},
 	],
 
-	skills: ["HTML", "CSS", "TailwindCSS", "JavaScript", "ReactJS", "NextJS"],
+	skills: [
+		"HTML",
+		"CSS",
+		"TailwindCSS",
+		"JavaScript",
+		"TypeScript",
+		"ReactJS",
+		"NextJS",
+	],
 };
