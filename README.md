@@ -2,7 +2,7 @@
 
 Hi! Thank you for checking out the repo of my first portfolio website.
 
-Built with [React](https://reactjs.org/), [Tailwind](https://tailwindcss.com) and hosted with [Netlify](https://www.netlify.com/)
+Built with [React](https://reactjs.org/), [Tailwind](https://tailwindcss.com), [Vite](https://vitejs.dev/), and hosted with [Netlify](https://www.netlify.com/)
 
 
 
