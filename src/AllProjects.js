@@ -19,17 +19,6 @@ export const data = {
 			featured: false,
 		},
 		{
-			name: "Squazzle",
-			description:
-				"A platform that allows users to list accommodations to-let.",
-			techUsed: ["ReactJs", "TailwindCSS", "Firebase"],
-			imgURL: `${squazzle}`,
-			repoURL:
-				"https://github.com/StuternHousemanship/SQUAZZLE-Frontend-Project-Team1.1/tree/main",
-			hostedURL: "https://squazzle-stutern.web.app/",
-			featured: true,
-		},
-		{
 			name: "Get Linked",
 			description: "A getLinked Hackathon Project",
 			techUsed: [
@@ -44,6 +33,18 @@ export const data = {
 			hostedURL: "https://get-linked-zeta.vercel.app/",
 			featured: false,
 		},
+		{
+			name: "Squazzle",
+			description:
+				"A platform that allows users to list accommodations to-let.",
+			techUsed: ["ReactJs", "TailwindCSS", "Firebase"],
+			imgURL: `${squazzle}`,
+			repoURL:
+				"https://github.com/StuternHousemanship/SQUAZZLE-Frontend-Project-Team1.1/tree/main",
+			hostedURL: "https://squazzle-stutern.web.app/",
+			featured: true,
+		},
+
 		{
 			name: "QR Code generator",
 			description:
