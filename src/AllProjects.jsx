@@ -181,5 +181,6 @@ export const data = {
 		"TypeScript",
 		"ReactJS",
 		"NextJS",
+		"Webflow",
 	],
 };
