@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
 import SideBar from "./Sidebar";
 import { motion } from "framer-motion";
 import Logo from "../images/logo.png";
@@ -35,6 +34,9 @@ const headerItem = {
 };
 
 // FRAMER MOTION
+
+export const resumeDriveLink =
+	"https://drive.google.com/file/d/1SEy_dMQqIMDKm30AFnkzdXTbBjcNu-uf/view?usp=sharing";
 
 const Navs = ({ sidebar, showSidebar }) => {
 	return (
@@ -90,11 +92,7 @@ const Navs = ({ sidebar, showSidebar }) => {
 						</a>
 					</motion.li>
 					<motion.li variants={item}>
-						<a
-							href="https://drive.google.com/file/d/1Xj3QJSg7MUkpqc2ZoaXXQCyK0KxN28tn/view?usp=sharing"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={resumeDriveLink} target="_blank" rel="noopener noreferrer">
 							<button
 								id="resume-btn"
 								className="border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80"
