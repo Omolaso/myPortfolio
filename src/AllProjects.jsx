@@ -1,10 +1,11 @@
 import artsy from "./images/artsy.png";
 import squazzle from "./images/squazzle.png";
-import movieHub from "./images/movieHub.png";
+import snappycx from "./images/snappycx.png";
 import space from "./images/space.jpg";
 import QR from "./images/QR.png";
 import sunnySide from "./images/sunnyside.png";
 import getLinked from "./images/getLinked.png";
+import mitera from "./images/mitera.png";
 
 export const data = {
 	landingPageProjects: [
@@ -16,6 +17,15 @@ export const data = {
 			imgURL: `${artsy}`,
 			repoURL: "https://github.com/Omolaso/artsy",
 			hostedURL: "https://artsymarketplace.netlify.app",
+			featured: false,
+		},
+		{
+			name: "Mitera",
+			description: "An HMO dashboard.",
+			techUsed: ["NextJs", "TypeScript", "TailwindCSS", "Supabase"],
+			imgURL: `${mitera}`,
+			repoURL: "https://github.com/Omolaso/Mitera-Health",
+			hostedURL: "https://mitera-health.vercel.app/",
 			featured: false,
 		},
 		{
@@ -34,6 +44,15 @@ export const data = {
 			featured: false,
 		},
 		{
+			name: "SnappyCX",
+			description: "An outsourcing organisation website.",
+			techUsed: ["Webflow"],
+			imgURL: `${snappycx}`,
+			repoURL: "",
+			hostedURL: "https://snappycx-preview.webflow.io/",
+			featured: false,
+		},
+		{
 			name: "Squazzle",
 			description:
 				"A platform that allows users to list accommodations to-let.",
@@ -44,7 +63,18 @@ export const data = {
 			hostedURL: "https://squazzle-stutern.web.app/",
 			featured: true,
 		},
+	],
 
+	archiveProjects: [
+		{
+			name: "Web Dico",
+			description:
+				"A fancy dictionary where you are required to create an account to gain access.",
+			techUsed: ["ReactJS", "TailwindCSS", "Firebase", "Dictionary API"],
+			repoURL: "https://github.com/Omolaso/webDictionary",
+			hostedURL: "https://webdictionary-auth.firebaseapp.com/",
+			featured: false,
+		},
 		{
 			name: "QR Code generator",
 			description:
@@ -53,28 +83,6 @@ export const data = {
 			imgURL: `${QR}`,
 			repoURL: "https://github.com/Omolaso/QR-Code-Generator",
 			hostedURL: "https://omolaso.github.io/QR-Code-Generator/",
-			featured: false,
-		},
-	],
-
-	archiveProjects: [
-		{
-			name: "MovieHub",
-			description:
-				"A webapp that grants access to view details and watch trailers of more than 1000 movies.",
-			techUsed: ["ReactJs", "TailwindCSS", "IMDB Movie API"],
-			imgURL: `${movieHub}`,
-			repoURL: "https://github.com/Omolaso/movieApp",
-			hostedURL: "https://moviehub11.netlify.app/",
-			featured: false,
-		},
-		{
-			name: "Web Dico",
-			description:
-				"A fancy dictionary where you are required to create an account to gain access.",
-			techUsed: ["ReactJS", "TailwindCSS", "Firebase", "Dictionary API"],
-			repoURL: "https://github.com/Omolaso/webDictionary",
-			hostedURL: "https://webdictionary-auth.firebaseapp.com/",
 			featured: false,
 		},
 		{
