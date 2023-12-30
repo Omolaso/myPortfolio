@@ -1,12 +1,14 @@
 import * as React from "react";
 import "../styles/Project.css";
 import { Link } from "react-router-dom";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import {
+	Card,
+	CardActions,
+	CardMedia,
+	CardContent,
+	Button,
+	Typography,
+} from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -85,15 +87,17 @@ const Projects = () => {
 							</CardContent>
 
 							<CardActions className="flex items-center justify-center bg-black">
-								<a
-									href={item.repoURL}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<Button size="large" title="GitHub">
-										<FontAwesomeIcon icon={faGithub} className="text-lg" />
-									</Button>
-								</a>
+								{item.repoURL && (
+									<a
+										href={item.repoURL}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Button size="large" title="GitHub">
+											<FontAwesomeIcon icon={faGithub} className="text-lg" />
+										</Button>
+									</a>
+								)}
 
 								<a
 									href={item.hostedURL}
