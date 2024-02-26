@@ -36,7 +36,7 @@ const headerItem = {
 // FRAMER MOTION
 
 export const resumeDriveLink =
-	"https://drive.google.com/file/d/1SEy_dMQqIMDKm30AFnkzdXTbBjcNu-uf/view?usp=sharing";
+	"https://drive.google.com/file/d/1lf2r7JQWKeK3jxg4kJmMtK4OwAxudwba/view?usp=sharing";
 
 const Navs = ({ sidebar, showSidebar }) => {
 	return (
