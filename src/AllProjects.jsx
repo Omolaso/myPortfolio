@@ -190,5 +190,6 @@ export const data = {
 		"ReactJS",
 		"NextJS",
 		"Webflow",
+		"React Native",
 	],
 };

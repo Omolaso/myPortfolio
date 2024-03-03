@@ -34,7 +34,7 @@ const About = () => {
 				<span className="text-lightGreen text-xl mr-2">01.</span>About Me
 			</h1>
 
-			<main className="flex lg:flex-row flex-col items-center justify-between">
+			<div className="flex lg:flex-row flex-col items-center justify-between">
 				<article className="text-left text-deepGrey text-lg mt-3 font-medium flex-1 px-4">
 					<p>
 						Hi again&#128075;, I am Tobi and I enjoy building items that live on
@@ -42,17 +42,8 @@ const About = () => {
 					</p>
 
 					<p className="my-2">
-						My interest in web development grew in early 2022 due to inspiration
-						from friends and my desire to attain a technical skill.
-					</p>
-
-					<p className="my-2 leading-snug">
-						Prior to this, I was a Navigator. <br />
-					</p>
-
-					<p className="my-2">
-						Fast-forward to today, I&apos;ve had the priviledge to learn my web
-						development skills from{" "}
+						Back in 2022, I grew interest for web development and decided to
+						join{" "}
 						<a
 							className="stutern-link"
 							href="https://www.stutern.com/"
@@ -60,8 +51,59 @@ const About = () => {
 							rel="noreferrer"
 						>
 							Stutern
+						</a>
+						.{" "}
+					</p>
+
+					<p className="my-2">
+						Fast-forward to today, I&apos;ve had the priviledge of building
+						software for a{" "}
+						<a
+							className="stutern-link"
+							href="https://www.pathscape.app/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							project management company
 						</a>{" "}
-						and I&apos;ve had a few projects since then.
+						thereby working on their{" "}
+						<a
+							className="stutern-link"
+							href="https://workspace.pathscape.app/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							main software
+						</a>{" "}
+						. Additionally, I&apos;ve worked for an{" "}
+						<a
+							className="stutern-link"
+							href="https://snappycx.com/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							outsourcing company
+						</a>{" "}
+						as the sole frontend engineer, building their software from scratch.
+						I&apos;ve also worked with a{" "}
+						<a
+							className="stutern-link"
+							href="https://afreninc.com"
+							target="_blank"
+							rel="noreferrer"
+						>
+							freelancing agency
+						</a>{" "}
+						and a{" "}
+						<a
+							className="stutern-link"
+							href="https://www.expressonline.ng/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							start-up
+						</a>
+						.
 					</p>
 
 					<div className="skill-set">
@@ -91,7 +133,7 @@ const About = () => {
 				<section className="w-full max-w-sm mt-10 hover:opacity-90">
 					<img src={me} alt="Me" className="rounded-xl w-4/5 mx-auto" />
 				</section>
-			</main>
+			</div>
 		</Div>
 	);
 };

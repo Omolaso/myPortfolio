@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Logo from "../images/logo.png";
 
 // FRAMER MOTION
-
 const container = {
 	hidden: { opacity: 1, scale: 0 },
 	visible: {
@@ -32,7 +31,6 @@ const headerItem = {
 		opacity: 1,
 	},
 };
-
 // FRAMER MOTION
 
 export const resumeDriveLink =
@@ -77,10 +75,10 @@ const Navs = ({ sidebar, showSidebar }) => {
 					</motion.li>
 					<motion.li variants={item}>
 						<a
-							href="#projects"
+							href="#experience"
 							className="hover:text-lightGreen hover:transition ease-in-out"
 						>
-							Projects
+							Experience
 						</a>
 					</motion.li>
 					<motion.li variants={item}>

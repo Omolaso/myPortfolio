@@ -53,10 +53,10 @@ const SideBar = ({ sidebar, showSidebar }) => {
 					</li>
 					<li className="mt-3">
 						<a
-							href="#projects"
+							href="#experience"
 							className="hover:text-lightGreen hover:transition ease-in-out"
 						>
-							Projects
+							Experience
 						</a>
 					</li>
 					<li className="mt-3">
