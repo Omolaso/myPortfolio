@@ -38,7 +38,7 @@ export const resumeDriveLink =
 
 const Navs = ({ sidebar, showSidebar }) => {
 	return (
-		<main className="w-full">
+		<div className="w-full">
 			<header className="flex items-center justify-between w-full">
 				<motion.div
 					variants={container}
@@ -70,7 +70,7 @@ const Navs = ({ sidebar, showSidebar }) => {
 							href="#about"
 							className="hover:text-lightGreen hover:transition ease-in-out"
 						>
-							About
+							About Me
 						</a>
 					</motion.li>
 					<motion.li variants={item}>
@@ -78,7 +78,7 @@ const Navs = ({ sidebar, showSidebar }) => {
 							href="#experience"
 							className="hover:text-lightGreen hover:transition ease-in-out"
 						>
-							Experience
+							Where I&apos;ve worked
 						</a>
 					</motion.li>
 					<motion.li variants={item}>
@@ -101,7 +101,7 @@ const Navs = ({ sidebar, showSidebar }) => {
 					</motion.li>
 				</motion.ul>
 			</header>
-		</main>
+		</div>
 	);
 };
 

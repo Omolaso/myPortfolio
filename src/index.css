@@ -7,21 +7,6 @@ html {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 /* STYLES FOR ARCHIVE */
 #archive-card:hover {
   transform: translateY(-7px);
@@ -43,4 +28,10 @@ code {
 /* Home component h3 style */
 .home-h3 {
   word-spacing: 5px;
+}
+
+/* MUI STYLES */
+
+.MuiTabList-indicator {
+  color: "#48B8A5",
 }

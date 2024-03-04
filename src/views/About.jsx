@@ -34,7 +34,7 @@ const About = () => {
 				<span className="text-lightGreen text-xl mr-2">01.</span>About Me
 			</h1>
 
-			<div className="flex lg:flex-row flex-col items-center justify-between">
+			<div className="flex lg:flex-row flex-col items-stretch gap-4 justify-between">
 				<article className="text-left text-deepGrey text-lg mt-3 font-medium flex-1 px-4">
 					<p>
 						Hi again&#128075;, I am Tobi and I enjoy building items that live on
@@ -42,10 +42,10 @@ const About = () => {
 					</p>
 
 					<p className="my-2">
-						Back in 2022, I grew interest for web development and decided to
+						Back in 2022, my interest grew for web development so I decided to
 						join{" "}
 						<a
-							className="stutern-link"
+							className="underline-style"
 							href="https://www.stutern.com/"
 							target="_blank"
 							rel="noreferrer"
@@ -59,7 +59,7 @@ const About = () => {
 						Fast-forward to today, I&apos;ve had the priviledge of building
 						software for a{" "}
 						<a
-							className="stutern-link"
+							className="underline-style"
 							href="https://www.pathscape.app/"
 							target="_blank"
 							rel="noreferrer"
@@ -68,7 +68,7 @@ const About = () => {
 						</a>{" "}
 						thereby working on their{" "}
 						<a
-							className="stutern-link"
+							className="underline-style"
 							href="https://workspace.pathscape.app/"
 							target="_blank"
 							rel="noreferrer"
@@ -77,7 +77,7 @@ const About = () => {
 						</a>{" "}
 						. Additionally, I&apos;ve worked for an{" "}
 						<a
-							className="stutern-link"
+							className="underline-style"
 							href="https://snappycx.com/"
 							target="_blank"
 							rel="noreferrer"
@@ -85,9 +85,9 @@ const About = () => {
 							outsourcing company
 						</a>{" "}
 						as the sole frontend engineer, building their software from scratch.
-						I&apos;ve also worked with a{" "}
+						I&apos;ve also worked with a <br />
 						<a
-							className="stutern-link"
+							className="underline-style"
 							href="https://afreninc.com"
 							target="_blank"
 							rel="noreferrer"
@@ -96,7 +96,7 @@ const About = () => {
 						</a>{" "}
 						and a{" "}
 						<a
-							className="stutern-link"
+							className="underline-style"
 							href="https://www.expressonline.ng/"
 							target="_blank"
 							rel="noreferrer"
@@ -130,9 +130,9 @@ const About = () => {
 					</div>
 				</article>
 
-				<section className="w-full max-w-sm mt-10 hover:opacity-90">
-					<img src={me} alt="Me" className="rounded-xl w-4/5 mx-auto" />
-				</section>
+				<div className="flex-[0.5] flex items-stretch min-h-[15rem] object-contain">
+					<img src={me} alt="Me" className="rounded-xl" />
+				</div>
 			</div>
 		</Div>
 	);

@@ -34,13 +34,13 @@ const Home = () => {
 			<div className="flex flex-col items-start md:items-center gap-6 w-full">
 				<motion.h3
 					variants={item}
-					className="home-h3 text-lg text-veryLightGrey text-center font-medium"
+					className="home-h3 text-lg text-veryLightGrey text-left md:text-center font-medium"
 				>
 					Hi, my name is
 				</motion.h3>
 				<motion.h1
 					variants={item}
-					className="text-4xl md:text-7xl font-bold text-lightGrey text-center"
+					className="text-4xl md:text-7xl font-bold text-lightGrey text-left md:text-center"
 				>
 					Tobi Adesanya.
 				</motion.h1>
@@ -48,19 +48,19 @@ const Home = () => {
 				<div className="flex flex-col items-start md:items-center gap-2 w-full">
 					<motion.h2
 						variants={item}
-						className="text-2xl md:text-4xl font-bold text-deepGrey text-center"
+						className="text-2xl md:text-4xl font-bold text-deepGrey text-left md:text-center"
 					>
 						Frontend Engineer
 					</motion.h2>
 					<motion.p
 						variants={item}
-						className="text-lg text-deepGrey font-medium text-center"
+						className="text-lg text-deepGrey font-medium text-left md:text-center"
 					>
 						I build pixel-perfect, engaging, and accessible digital experiences.
 					</motion.p>
 				</div>
 
-				<motion.div variants={item} className="mt-4">
+				<motion.div variants={item}>
 					<a href="#experience">
 						<button
 							id="resume-btn"

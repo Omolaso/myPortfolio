@@ -48,7 +48,7 @@ const SideBar = ({ sidebar, showSidebar }) => {
 							href="#about"
 							className="hover:text-lightGreen hover:transition ease-in-out"
 						>
-							About
+							About Me
 						</a>
 					</li>
 					<li className="mt-3">
@@ -56,7 +56,7 @@ const SideBar = ({ sidebar, showSidebar }) => {
 							href="#experience"
 							className="hover:text-lightGreen hover:transition ease-in-out"
 						>
-							Experience
+							Where I&apos;ve worked
 						</a>
 					</li>
 					<li className="mt-3">

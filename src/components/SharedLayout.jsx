@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "../styles/SharedLayout.css";
 import Navs from "./Navs";
 import Home from "../views/Home";
@@ -6,8 +8,7 @@ import About from "../views/About";
 import Projects from "../views/Projects";
 import Contact from "../views/Contact";
 import Footer from "./Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import WorksTabs from "./WorksTab";
 
 const SharedLayout = () => {
 	const [sidebar, showSidebar] = useState(false);
@@ -32,7 +33,7 @@ const SharedLayout = () => {
 	}
 
 	return (
-		<main className="flex flex-col gap-y-6 md:gap-y-8 min-h-screen bg-black relative">
+		<main className="flex flex-col gap-8 min-h-screen bg-black relative w-full font-sans">
 			<nav
 				id="home"
 				className="flex items-center justify-center w-full min-h-[10vh] md:py-4 px-8 md:px-12"
@@ -40,7 +41,7 @@ const SharedLayout = () => {
 				<Navs sidebar={sidebar} showSidebar={showSidebar} />
 			</nav>
 
-			<section className="flex items-center justify-center min-h-[90vh] px-8 md:px-12">
+			<section className="flex items-center justify-center min-h-[90vh] px-8 md:px-12 w-full">
 				<div
 					className={
 						sidebar
@@ -48,33 +49,33 @@ const SharedLayout = () => {
 							: "flex flex-col justify-between"
 					}
 				>
-					<div className="flex items-start justify-center md:min-h-[80vh] min-h-[50vh]">
+					<div className="flex items-start justify-center md:min-h-[80vh] min-h-screen w-full">
 						<Home />
 					</div>
 
 					<div
 						id="about"
-						className="flex items-center justify-start min-h-screen py-4"
+						className="flex items-center justify-start min-h-screen py-4 w-full"
 					>
 						<About />
 					</div>
 
-					<div id="experience" className="pt-12 min-h-screen">
-						<Projects />
+					<div id="experience" className="pt-12 min-h-screen w-full">
+						<WorksTabs />
 					</div>
 
 					<div
 						id="contact"
-						className="flex items-center justify-center relative min-h-screen"
+						className="flex items-center justify-center relative min-h-screen w-full"
 					>
 						<Contact />
 					</div>
 				</div>
 			</section>
 
-			<section className="w-full absolute bottom-0 px-2">
+			<footer className="w-full absolute bottom-0 px-2">
 				<Footer />
-			</section>
+			</footer>
 
 			<div
 				className={
