@@ -6,7 +6,6 @@ import { data } from "../AllProjects";
 import { resumeDriveLink } from "../components/Navs";
 
 const ExperiencePaper = styled(Paper)(({ theme }) => ({
-	...theme.typography.body2,
 	padding: "0.5rem 0",
 	display: "flex",
 	alignItems: "stretch",
@@ -106,14 +105,12 @@ const Experience = () => {
 										className="gap-3 w-full"
 									>
 										{item.skills.map((skill) => (
-											<button
+											<div
 												key={skill}
-												type="button"
-												disabled
 												className="skills-btn bg-lightBlack text-lightGreen text-sm font-normal p-2 rounded-lg"
 											>
 												{skill}
-											</button>
+											</div>
 										))}
 									</Stack>
 								</Stack>

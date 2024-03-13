@@ -14,14 +14,22 @@ export const data = {
 			url: "https://snappycx.com/",
 			about:
 				"Build, style and maintain critical components for SnappyCX frontend. Worked closely with cross-functional teams including developers, designers and project managers to implement best practices in web accessibility.",
-			skills: ["CSS", "Webflow", "JavaScript", "CodeSandBox", "Collect.Chat", "ZohoCRM"],
+			skills: [
+				"CSS",
+				"Webflow",
+				"JavaScript",
+				"CodeSandBox",
+				"Collect.Chat",
+				"ZohoCRM",
+			],
 		},
 
 		{
 			position: "Frontend Engineer • ECO ONLINE GLOBAL (Remote) ↗",
 			duration: "2023 - 2024",
 			url: "https://www.expressonline.ng/",
-			about: "",
+			about:
+				"Collaborated with backend engineers to define API contracts and ensure seamless integration. Identified and addressed performance bottlenecks, conducting regular code reviews to maintain code quality standards, and staying updated on industry best practices to implement relevant optimizations.",
 			skills: ["TailwindCSS", "JavaScript", "TypeScript", "React", "NextJs"],
 		},
 
@@ -214,7 +222,7 @@ export const data = {
 		"TailwindCSS",
 		"JavaScript",
 		"TypeScript",
-		"ReactJS",
+		"React",
 		"NextJS",
 		"Webflow",
 		"React Native",
