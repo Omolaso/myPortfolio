@@ -8,12 +8,12 @@ ol li::before {
 
 /* STUTERN LINK */
 
-.stutern-link {
+.underline-style {
     position: relative;
     color: #48B8A5;
 }
 
-.stutern-link:before {
+.underline-style:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -26,7 +26,7 @@ ol li::before {
   transition: all 0.3s ease-in-out;
 }
 
-.stutern-link:hover:before {
+.underline-style:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }

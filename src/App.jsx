@@ -1,13 +1,14 @@
 import LandingPage from "./components/LandingPage";
 import ScrollToTop from "./components/ScrollToTop";
+import AppThemeProvider from "./components/ThemeProvider";
 
-function App() {
+const App = () => {
 	return (
-		<>
-			<ScrollToTop />
+		<AppThemeProvider>
 			<LandingPage />
-		</>
+			<ScrollToTop />
+		</AppThemeProvider>
 	);
-}
+};
 
 export default App;

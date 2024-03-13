@@ -1,16 +1,23 @@
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import React from "react";
 import "../styles/Sidebar.css";
 import Logo from "../images/logo.png";
-import { resumeDriveLink } from "./Navs";
+import { resumeDriveLink, navLinkArray } from "./Navs";
+import { ExperienceTabContext } from "./LandingPage";
 
 const SideBar = ({ sidebar, showSidebar }) => {
+	const { setValue } = useContext(ExperienceTabContext);
+
 	const handleSidebar = () => {
 		showSidebar(!sidebar);
 	};
 
 	const removeSidebar = () => {
 		showSidebar(false);
+	};
+
+	const handleChangeExperienceTab = () => {
+		setValue("1");
 	};
 
 	window.addEventListener("resize", removeSidebar);
@@ -38,35 +45,34 @@ const SideBar = ({ sidebar, showSidebar }) => {
 				</div>
 			</header>
 
-			<nav
+			<div
 				className={sidebar ? "sidebar-active" : "side-bar"}
 				onClick={removeSidebar}
 			>
 				<ul className="flex flex-col items-center justify-between h-[50vh] px-8 mb-8 text-lightGrey text-2xl transition-all">
-					<li className="mt-3">
-						<a
-							href="#about"
-							className="hover:text-lightGreen hover:transition ease-in-out"
-						>
-							About
-						</a>
-					</li>
-					<li className="mt-3">
-						<a
-							href="#projects"
-							className="hover:text-lightGreen hover:transition ease-in-out"
-						>
-							Projects
-						</a>
-					</li>
-					<li className="mt-3">
-						<a
-							href="#contact"
-							className="hover:text-lightGreen hover:transition ease-in-out"
-						>
-							Contact Me
-						</a>
-					</li>
+					{navLinkArray.map((link) =>
+						link.function ? (
+							<li key={link.path}>
+								<a
+									href={link.path}
+									onClick={() => handleChangeExperienceTab()}
+									className="hover:text-lightGreen hover:transition ease-in-out"
+								>
+									{link.name}
+								</a>
+							</li>
+						) : (
+							<li key={link.path}>
+								<a
+									href={link.path}
+									className="hover:text-lightGreen hover:transition ease-in-out"
+								>
+									{link.name}
+								</a>
+							</li>
+						)
+					)}
+
 					<li className="mt-3">
 						<a href={resumeDriveLink} target="_blank" rel="noopener noreferrer">
 							<button
@@ -78,7 +84,7 @@ const SideBar = ({ sidebar, showSidebar }) => {
 						</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</>
 	);
 };
