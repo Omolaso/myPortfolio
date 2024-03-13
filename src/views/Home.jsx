@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
+import { ExperienceTabContext } from "../components/LandingPage";
 
 // FRAMER MOTION
 const container = {
@@ -24,6 +25,12 @@ const item = {
 // FRAMER MOTION
 
 const Home = () => {
+	const { setValue } = useContext(ExperienceTabContext);
+
+	const handleChangeExperienceTab = () => {
+		setValue("2");
+	};
+
 	return (
 		<motion.section
 			variants={container}
@@ -64,6 +71,7 @@ const Home = () => {
 					<a href="#experience">
 						<button
 							id="resume-btn"
+							onClick={() => handleChangeExperienceTab()}
 							className="border font-medium border-lightGreen py-3 px-10 rounded-md text-lightGreen hover:bg-opacity-80"
 						>
 							Check out my projects

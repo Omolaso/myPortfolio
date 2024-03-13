@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
 	return (
-		<div className="flex items-center justify-center relative py-4 w-full">
+		<div className="flex flex-col items-center justify-center relative py-4 w-full">
 			<div className="flex w-full max-w-xs mx-auto items-center justify-around">
 				<a
 					href="https://www.github.com/omolaso"

@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        sans:['Poppins', 'sans-serif']
+        sans: ['Instrument Sans', 'sans-serif'],
       },
       colors:{
         lightBlack: '#112240',

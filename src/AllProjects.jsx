@@ -1,6 +1,5 @@
 import artsy from "./images/artsy.png";
 import squazzle from "./images/squazzle.png";
-import snappycx from "./images/snappycx.png";
 import space from "./images/space.jpg";
 import QR from "./images/QR.png";
 import sunnySide from "./images/sunnyside.png";
@@ -8,6 +7,42 @@ import getLinked from "./images/getLinked.png";
 import mitera from "./images/mitera.png";
 
 export const data = {
+	experience: [
+		{
+			position: "Frontend Engineer • SnappyCX (Remote) ↗",
+			duration: "2023 - Present",
+			url: "https://snappycx.com/",
+			about:
+				"Build, style and maintain critical components for SnappyCX frontend. Worked closely with cross-functional teams including developers, designers and project managers to implement best practices in web accessibility.",
+			skills: ["CSS", "Webflow", "JavaScript", "CodeSandBox", "Collect.Chat", "ZohoCRM"],
+		},
+
+		{
+			position: "Frontend Engineer • ECO ONLINE GLOBAL (Remote) ↗",
+			duration: "2023 - 2024",
+			url: "https://www.expressonline.ng/",
+			about: "",
+			skills: ["TailwindCSS", "JavaScript", "TypeScript", "React", "NextJs"],
+		},
+
+		{
+			position: "Frontend Engineer • PATHSCAPE (Remote) ↗",
+			duration: "2022 - 2023",
+			url: "https://www.pathscape.app/",
+			about:
+				"Implemented modern conventions to improve core dynamic features of Pathscape's main software. Developed user interfaces, seamlessly integrated plugins and significantly enhanced the overall user experience.",
+			skills: [
+				"Styled-Components",
+				"JavaScript",
+				"TypeScript",
+				"React",
+				"NextJs",
+				"Recoil",
+				"MUI",
+			],
+		},
+	],
+
 	landingPageProjects: [
 		{
 			name: "Artsy",
@@ -17,15 +52,6 @@ export const data = {
 			imgURL: `${artsy}`,
 			repoURL: "https://github.com/Omolaso/artsy",
 			hostedURL: "https://artsymarketplace.netlify.app",
-			featured: false,
-		},
-		{
-			name: "Mitera",
-			description: "An HMO dashboard.",
-			techUsed: ["NextJs", "TypeScript", "TailwindCSS", "Supabase"],
-			imgURL: `${mitera}`,
-			repoURL: "https://github.com/Omolaso/Mitera-Health",
-			hostedURL: "https://mitera-health.vercel.app/",
 			featured: false,
 		},
 		{
@@ -44,14 +70,15 @@ export const data = {
 			featured: false,
 		},
 		{
-			name: "SnappyCX",
-			description: "An outsourcing organisation website.",
-			techUsed: ["Webflow"],
-			imgURL: `${snappycx}`,
-			repoURL: "",
-			hostedURL: "https://snappycx-preview.webflow.io/",
+			name: "Mitera",
+			description: "An HMO dashboard.",
+			techUsed: ["NextJs", "TypeScript", "TailwindCSS", "Supabase"],
+			imgURL: `${mitera}`,
+			repoURL: "https://github.com/Omolaso/Mitera-Health",
+			hostedURL: "https://mitera-health.vercel.app/",
 			featured: false,
 		},
+
 		{
 			name: "Squazzle",
 			description:

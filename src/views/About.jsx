@@ -57,7 +57,7 @@ const About = () => {
 
 					<p className="my-2">
 						Fast-forward to today, I&apos;ve had the priviledge of building
-						software for a{" "}
+						software for a <br />
 						<a
 							className="underline-style"
 							href="https://www.pathscape.app/"
@@ -84,8 +84,8 @@ const About = () => {
 						>
 							outsourcing company
 						</a>{" "}
-						as the sole frontend engineer, building their software from scratch.
-						I&apos;ve also worked with a <br />
+						as the lead frontend engineer, building their software from scratch.
+						I&apos;ve also worked with a{" "}
 						<a
 							className="underline-style"
 							href="https://afreninc.com"

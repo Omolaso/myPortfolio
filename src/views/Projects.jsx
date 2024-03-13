@@ -16,13 +16,13 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { data } from "../AllProjects";
 
-const Div = ({ children }) => {
+const MotionDiv = ({ children }) => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 
 	return (
-		<main ref={ref} className="framer-section">
-			<section
+		<section ref={ref} className="framer-section">
+			<div
 				style={{
 					transform: isInView ? "none" : "translateX(500px)",
 					opacity: isInView ? 1 : 0,
@@ -30,8 +30,8 @@ const Div = ({ children }) => {
 				}}
 			>
 				{children}
-			</section>
-		</main>
+			</div>
+		</section>
 	);
 };
 
@@ -39,9 +39,9 @@ const Projects = () => {
 	const { landingPageProjects } = data;
 
 	return (
-		<section className="flex flex-col items-center justify-center text-deepGrey text-lg gap-y-12 font-medium">
+		<div className="flex flex-col items-center justify-center text-deepGrey text-lg gap-y-12 font-medium">
 			{landingPageProjects.map((item) => (
-				<Div key={item.name}>
+				<MotionDiv key={item.name}>
 					<Card className="w-full mx-auto max-w-4xl">
 						<CardMedia
 							component="img"
@@ -102,11 +102,11 @@ const Projects = () => {
 							</a>
 						</CardActions>
 					</Card>
-				</Div>
+				</MotionDiv>
 			))}
 
 			{/* More Project Button */}
-			<Div>
+			<MotionDiv>
 				<div className="text-center">
 					<Link to="/archive">
 						<button
@@ -117,8 +117,8 @@ const Projects = () => {
 						</button>
 					</Link>
 				</div>
-			</Div>
-		</section>
+			</MotionDiv>
+		</div>
 	);
 };
 

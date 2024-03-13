@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Box, Tab } from "@mui/material";
 import { TabList, TabPanel, TabContext } from "@mui/lab";
 import Projects from "../views/Projects";
 import Experience from "../views/Experience";
+import { ExperienceTabContext } from "./LandingPage";
 
-const tabStyle = { fontWeight: 700, color: "#48B8A5" };
+const tabStyle = {
+	fontWeight: 700,
+	color: "#48B8A5",
+};
+
+const tabPanelStyle = { paddingLeft: 0, paddingRight: 0 };
 
 const WorksTabs = () => {
-	const [value, setValue] = useState("1");
+	const { value, setValue } = useContext(ExperienceTabContext);
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
@@ -22,7 +28,7 @@ const WorksTabs = () => {
 				</h1>
 			</header>
 
-			<Box sx={{ width: "100%", typography: "body1" }}>
+			<Box>
 				<TabContext value={value}>
 					<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
 						<TabList
@@ -36,11 +42,11 @@ const WorksTabs = () => {
 						</TabList>
 					</Box>
 
-					<TabPanel value="1">
+					<TabPanel value="1" sx={tabPanelStyle}>
 						<Experience />
 					</TabPanel>
 
-					<TabPanel value="2">
+					<TabPanel value="2" sx={tabPanelStyle}>
 						<Projects />
 					</TabPanel>
 				</TabContext>

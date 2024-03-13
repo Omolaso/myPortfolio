@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -28,10 +29,4 @@ html {
 /* Home component h3 style */
 .home-h3 {
   word-spacing: 5px;
-}
-
-/* MUI STYLES */
-
-.MuiTabList-indicator {
-  color: "#48B8A5",
 }
