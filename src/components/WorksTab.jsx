@@ -37,7 +37,7 @@ const WorksTabs = () => {
 							variant="fullWidth"
 							centered
 						>
-							<Tab label="Places I've Worked" value="1" sx={tabStyle} />
+							<Tab label="Experience" value="1" sx={tabStyle} />
 							<Tab label="Personal Projects" value="2" sx={tabStyle} />
 						</TabList>
 					</Box>
