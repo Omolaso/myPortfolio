@@ -35,8 +35,9 @@ const headerItem = {
 };
 // FRAMER MOTION
 
-export const resumeDriveLink =
-	"https://drive.google.com/file/d/1lf2r7JQWKeK3jxg4kJmMtK4OwAxudwba/view?usp=sharing";
+export const resumeDriveLink = encodeURI(
+	"https://drive.google.com/file/d/1hg6G-wslk-ytc5oRJRsfyTZCQu6P_e1l/view?usp=sharing"
+);
 
 export const navLinkArray = [
 	{ name: "About Me", path: "#about", function: false },
