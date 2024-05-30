@@ -30,7 +30,7 @@ export const data = {
 			url: "https://www.expressonline.ng/",
 			about:
 				"Collaborated with backend engineers to define API contracts and ensure seamless integration for Eco Online Global's projects. Identified and addressed performance bottlenecks, conducting regular code reviews to maintain code quality standards, and staying updated on industry best practices to implement relevant optimizations.",
-			skills: ["TailwindCSS", "JavaScript", "TypeScript", "React", "NextJs"],
+			skills: ["TailwindCSS", "JavaScript", "TypeScript", "React", "NextJs", "Redux"],
 		},
 
 		{
@@ -47,6 +47,7 @@ export const data = {
 				"NextJs",
 				"Recoil",
 				"MUI",
+				"Redux"
 			],
 		},
 	],
@@ -206,7 +207,7 @@ export const data = {
 			featured: false,
 		},
 		{
-			name: "Brigtly Landing Page",
+			name: "Brightly Landing Page",
 			description:
 				"A landing page for a learning product for students between the ages of 6 - 10",
 			techUsed: ["HTML", "CSS", "JavaScript"],
