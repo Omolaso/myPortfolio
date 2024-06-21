@@ -27,7 +27,7 @@ export const data = {
 		{
 			position: "Frontend Engineer • ECO ONLINE GLOBAL (Remote) ↗",
 			duration: "2023 - 2024",
-			url: "https://www.expressonline.ng/",
+			url: "https://www.ecoonlineglobal.com/",
 			about:
 				"Collaborated with backend engineers to define API contracts and ensure seamless integration for Eco Online Global's projects. Identified and addressed performance bottlenecks, conducting regular code reviews to maintain code quality standards, and staying updated on industry best practices to implement relevant optimizations.",
 			skills: ["TailwindCSS", "JavaScript", "TypeScript", "React", "NextJs", "Redux"],
