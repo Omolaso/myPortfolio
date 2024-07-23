@@ -36,7 +36,7 @@ const headerItem = {
 // FRAMER MOTION
 
 export const resumeDriveLink = encodeURI(
-  "https://drive.google.com/file/d/1ehrQP0-v32fdHx1iWcNkEq_E4DwafLnx/view?usp=sharing"
+  "https://drive.google.com/file/d/1Kg-6vZCTJWqk9tbk8lzVU8sgn3et0nJ6/view?usp=sharing"
 );
 
 export const navLinkArray = [
@@ -53,69 +53,67 @@ const Navs = ({ sidebar, showSidebar }) => {
   };
 
   return (
-    <div className="w-full">
-      <header className="flex items-center justify-between w-full">
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="hidden md:block cursor-pointer"
-        >
-          <motion.a href="/" variants={headerItem} className="">
-            <img
-              src={Logo}
-              alt="logo"
-              className="border-2 border-veryLightGrey rounded-[50%] w-[40px]"
-            />
-          </motion.a>
-        </motion.div>
+    <header className="flex flex-row items-center justify-between w-full">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="visible"
+        className="hidden md:block cursor-pointer"
+      >
+        <motion.a href="/" variants={headerItem} className="">
+          <img
+            src={Logo}
+            alt="logo"
+            className="border-2 border-veryLightGrey rounded-[50%] w-[40px]"
+          />
+        </motion.a>
+      </motion.div>
 
-        <nav className="block md:hidden w-full">
-          <SideBar sidebar={sidebar} showSidebar={showSidebar} />
-        </nav>
+      <nav className="block md:hidden w-full">
+        <SideBar sidebar={sidebar} showSidebar={showSidebar} />
+      </nav>
 
-        <motion.ul
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="hidden md:flex items-center justify-between flex-auto max-w-lg text-lightGrey text-sm font-medium"
-        >
-          {navLinkArray.map((link) =>
-            link.function ? (
-              <motion.li key={link.path} variants={item}>
-                <a
-                  href={link.path}
-                  onClick={() => handleChangeExperienceTab()}
-                  className="hover:text-lightGreen hover:transition ease-in-out"
-                >
-                  {link.name}
-                </a>
-              </motion.li>
-            ) : (
-              <motion.li key={link.path} variants={item}>
-                <a
-                  href={link.path}
-                  className="hover:text-lightGreen hover:transition ease-in-out"
-                >
-                  {link.name}
-                </a>
-              </motion.li>
-            )
-          )}
-
-          <motion.li variants={item}>
-            <a href={resumeDriveLink} target="_blank" rel="noopener noreferrer">
-              <button
-                id="resume-btn"
-                className="border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80"
+      <motion.ul
+        variants={container}
+        initial="hidden"
+        animate="visible"
+        className="hidden md:flex items-center justify-between flex-auto max-w-lg text-lightGrey text-sm font-medium"
+      >
+        {navLinkArray.map((link) =>
+          link.function ? (
+            <motion.li key={link.path} variants={item}>
+              <a
+                href={link.path}
+                onClick={() => handleChangeExperienceTab()}
+                className="hover:text-lightGreen hover:transition ease-in-out"
               >
-                Resume
-              </button>
-            </a>
-          </motion.li>
-        </motion.ul>
-      </header>
-    </div>
+                {link.name}
+              </a>
+            </motion.li>
+          ) : (
+            <motion.li key={link.path} variants={item}>
+              <a
+                href={link.path}
+                className="hover:text-lightGreen hover:transition ease-in-out"
+              >
+                {link.name}
+              </a>
+            </motion.li>
+          )
+        )}
+
+        <motion.li variants={item}>
+          <a href={resumeDriveLink} target="_blank" rel="noopener noreferrer">
+            <button
+              id="resume-btn"
+              className="border border-lightGreen py-2 px-3 rounded-md text-lightGreen hover:bg-opacity-80"
+            >
+              Resume
+            </button>
+          </a>
+        </motion.li>
+      </motion.ul>
+    </header>
   );
 };
 
