@@ -5,6 +5,7 @@ import QR from "./images/QR.png";
 import sunnySide from "./images/sunnyside.png";
 import getLinked from "./images/getLinked.png";
 import mitera from "./images/mitera.png";
+import squareBox from "./images/squareBox.png";
 
 export const data = {
   experience: [
@@ -61,6 +62,16 @@ export const data = {
 
   landingPageProjects: [
     {
+      name: "Square Box",
+      description: "A platform to buy, sell and trade gift cards",
+      imgURL: `${squareBox}`,
+      hostedURL: "https://squarebox.ng/",
+      repoURL: "https://github.com/FinesseCodesWS/ecotfx-frontend",
+      featured: false,
+      description: "Gift Card and Crypto Trading Application",
+      techUsed: ["ReactJs", "Bootstrap", "Vite", "MUI", "CryptoJS"],
+    },
+    {
       name: "Artsy",
       description:
         "A website to auction photographs and other amazing artworks.",
@@ -85,27 +96,6 @@ export const data = {
       hostedURL: "https://get-linked-zeta.vercel.app/",
       featured: false,
     },
-    {
-      name: "Mitera",
-      description: "An HMO dashboard.",
-      techUsed: ["NextJs", "TypeScript", "TailwindCSS", "Supabase"],
-      imgURL: `${mitera}`,
-      repoURL: "https://github.com/Omolaso/Mitera-Health",
-      hostedURL: "https://mitera-health.vercel.app/",
-      featured: false,
-    },
-
-    {
-      name: "Squazzle",
-      description:
-        "A platform that allows users to list accommodations to-let.",
-      techUsed: ["ReactJs", "TailwindCSS", "Firebase"],
-      imgURL: `${squazzle}`,
-      repoURL:
-        "https://github.com/StuternHousemanship/SQUAZZLE-Frontend-Project-Team1.1/tree/main",
-      hostedURL: "https://squazzle-stutern.web.app/",
-      featured: true,
-    },
   ],
 
   archiveProjects: [
@@ -119,6 +109,17 @@ export const data = {
       featured: false,
     },
     {
+      name: "Squazzle",
+      description:
+        "A platform that allows users to list accommodations to-let.",
+      techUsed: ["ReactJs", "TailwindCSS", "Firebase"],
+      imgURL: `${squazzle}`,
+      repoURL:
+        "https://github.com/StuternHousemanship/SQUAZZLE-Frontend-Project-Team1.1/tree/main",
+      hostedURL: "https://squazzle-stutern.web.app/",
+      featured: true,
+    },
+    {
       name: "QR Code generator",
       description:
         "A code generator for generating rapid codes to access websites.",
@@ -126,6 +127,15 @@ export const data = {
       imgURL: `${QR}`,
       repoURL: "https://github.com/Omolaso/QR-Code-Generator",
       hostedURL: "https://omolaso.github.io/QR-Code-Generator/",
+      featured: false,
+    },
+    {
+      name: "Mitera",
+      description: "An HMO dashboard.",
+      techUsed: ["NextJs", "TypeScript", "TailwindCSS", "Supabase"],
+      imgURL: `${mitera}`,
+      repoURL: "https://github.com/Omolaso/Mitera-Health",
+      hostedURL: "https://mitera-health.vercel.app/",
       featured: false,
     },
     {
@@ -247,10 +257,10 @@ export const data = {
       title: "SquareBox Admin",
       description: "Gift Card and Crypto Trading Application Admin",
     },
-    {
-      url: "https://www.expressonline.ng/",
-      title: "Express Online",
-      description: "E-commerce Website",
-    },
+    // {
+    //   url: "https://www.expressonline.ng/",
+    //   title: "Express Online",
+    //   description: "E-commerce Website",
+    // },
   ],
 };
