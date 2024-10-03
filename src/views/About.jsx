@@ -107,7 +107,7 @@ const About = () => {
           </p>
 
           <div className="flex flex-col gap-1 w-full">
-            <p>Few live projects I&apos;ve worked on include:</p>
+            <p>Projects I&apos;ve worked on include:</p>
             <ol className="list-none">
               {liveProjects.map((project) => (
                 <li key={project.url}>
