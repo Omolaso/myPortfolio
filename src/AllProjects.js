@@ -6,12 +6,13 @@ import sunnySide from "./images/sunnyside.png";
 import getLinked from "./images/getLinked.png";
 import mitera from "./images/mitera.png";
 import squareBox from "./images/squareBox.png";
+import riskOffice from "./images/riskOffice.png";
 
 export const data = {
   experience: [
     {
       position: "Frontend Engineer • SnappyCX (Remote) ↗",
-      duration: "2023 - Present",
+      duration: "2023 - 2025",
       url: "https://snappycx.com/",
       about:
         "Build, style and maintain critical components for SnappyCX frontend. Worked closely with cross-functional teams including developers, designers and project managers to implement best practices in web accessibility.",
@@ -69,17 +70,24 @@ export const data = {
       repoURL: "https://github.com/FinesseCodesWS/ecotfx-frontend",
       featured: false,
       description: "Gift Card and Crypto Trading Application",
-      techUsed: ["ReactJs", "Bootstrap", "Vite", "MUI", "CryptoJS"],
+      techUsed: [
+        "ReactJs",
+        "Bootstrap",
+        "Vite",
+        "MUI",
+        "React Redux",
+        "CryptoJS",
+      ],
     },
     {
-      name: "Artsy",
-      description:
-        "A website to auction photographs and other amazing artworks.",
-      techUsed: ["ReactJs", "TailwindCSS", "RandomJPEGS", "JSON Server"],
-      imgURL: `${artsy}`,
-      repoURL: "https://github.com/Omolaso/artsy",
-      hostedURL: "https://artsymarketplace.netlify.app",
+      name: "Risk Office",
+      description: "A Risk Management Platform",
+      imgURL: `${riskOffice}`,
+      hostedURL: "https://www.myriskoffice.com/",
+      repoURL: "https://github.com/dev-fikayomi/Risk-Office",
       featured: false,
+      description: "Risk Management and Analysis",
+      techUsed: ["ReactJs", "TailwindCSS", "Vite", "MUI", "React Hook Form"],
     },
     {
       name: "Get Linked",
@@ -94,6 +102,16 @@ export const data = {
       imgURL: `${getLinked}`,
       repoURL: "https://github.com/Omolaso/getLinked",
       hostedURL: "https://get-linked-zeta.vercel.app/",
+      featured: false,
+    },
+    {
+      name: "Artsy",
+      description:
+        "A website to auction photographs and other amazing artworks.",
+      techUsed: ["ReactJs", "TailwindCSS", "RandomJPEGS", "JSON Server"],
+      imgURL: `${artsy}`,
+      repoURL: "https://github.com/Omolaso/artsy",
+      hostedURL: "https://artsymarketplace.netlify.app",
       featured: false,
     },
   ],
@@ -257,10 +275,15 @@ export const data = {
       title: "SquareBox Admin",
       description: "Gift Card and Crypto Trading Application Admin",
     },
-    // {
-    //   url: "https://www.expressonline.ng/",
-    //   title: "Express Online",
-    //   description: "E-commerce Website",
-    // },
+    {
+      url: "https://www.myriskoffice.com/",
+      title: "Risk Office",
+      description: "A Risk Management Platform",
+    },
+    {
+      url: "https://manage.myriskoffice.com/",
+      title: "Risk Office Admin",
+      description: "A Risk Management Platform Admin",
+    },
   ],
 };

@@ -31,7 +31,7 @@ const Contact = () => {
         </h1>
       </header>
 
-      <main className="text-center">
+      <section className="text-center">
         <h2 className="text-5xl md:text-7xl mt-6 font-bold text-lightGrey">
           Get In Touch
         </h2>
@@ -44,7 +44,7 @@ const Contact = () => {
             Say Hello
           </button>
         </a>
-      </main>
+      </section>
     </Div>
   );
 };
