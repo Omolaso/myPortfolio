@@ -36,7 +36,7 @@ const headerItem = {
 // FRAMER MOTION
 
 export const resumeDriveLink = encodeURI(
-  "https://drive.google.com/file/d/1Kg-6vZCTJWqk9tbk8lzVU8sgn3et0nJ6/view?usp=sharing"
+  "https://drive.google.com/file/d/1kPQoIQQPeYlUuw34FUP7ZFtG8X0rgdV7/view?usp=sharing"
 );
 
 export const navLinkArray = [
